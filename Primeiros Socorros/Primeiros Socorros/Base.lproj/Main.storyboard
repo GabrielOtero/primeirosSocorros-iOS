@@ -42,10 +42,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Q0V-tf-VcS">
                                 <rect key="frame" x="448" y="208" width="200" height="151"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrO-x5-ytq">
-                                <rect key="frame" x="289" y="108" width="88" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="17"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y33-e1-bJh">
+                                <rect key="frame" x="16" y="48" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                <state key="normal" title="O que é">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="703-4V-yAM" kind="show" id="ZcW-7C-cG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LrO-x5-ytq">
+                                <rect key="frame" x="232" y="48" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                 <state key="normal" title="Trauma">
                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -53,44 +62,90 @@
                                     <segue destination="703-4V-yAM" kind="show" id="r8r-y4-paO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Engasgo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cf-62-1V1">
-                                <rect key="frame" x="448" y="113" width="199" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="17"/>
-                                <color key="textColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giC-2Y-yia">
+                                <rect key="frame" x="447" y="48" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                <state key="normal" title="Engasgo">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdG-c0-ksy">
+                                <rect key="frame" x="16" y="208" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                <state key="normal" title="Convulsão">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-43-CSE">
+                                <rect key="frame" x="232" y="207" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                <state key="normal" title="Desmaio">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMj-SV-h1I">
+                                <rect key="frame" x="447" y="207" width="200" height="152"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                <state key="normal" title="Parada cardiaca">
+                                    <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Q0V-tf-VcS" secondAttribute="trailing" constant="16" id="0Vu-hD-YOI"/>
+                            <constraint firstItem="Y33-e1-bJh" firstAttribute="centerX" secondItem="SYH-ah-R9D" secondAttribute="centerX" id="11O-wQ-NxK"/>
+                            <constraint firstItem="LrO-x5-ytq" firstAttribute="height" secondItem="2b6-pp-tju" secondAttribute="height" id="1F6-Gb-uWQ"/>
+                            <constraint firstItem="HdG-c0-ksy" firstAttribute="centerY" secondItem="iqg-RS-Cft" secondAttribute="centerY" id="1Qk-wX-9x2"/>
                             <constraint firstItem="Q0V-tf-VcS" firstAttribute="leading" secondItem="yoA-dU-qfa" secondAttribute="trailing" constant="16" id="24Q-ox-2ZE"/>
+                            <constraint firstItem="uMj-SV-h1I" firstAttribute="height" secondItem="Q0V-tf-VcS" secondAttribute="height" id="45g-nL-YqB"/>
                             <constraint firstItem="iqg-RS-Cft" firstAttribute="height" secondItem="SYH-ah-R9D" secondAttribute="height" id="5SC-w1-9p6"/>
                             <constraint firstItem="3A3-1r-2cc" firstAttribute="trailing" secondItem="TA9-Kk-jLh" secondAttribute="trailing" constant="16" id="7yQ-7e-p6w"/>
+                            <constraint firstItem="LrO-x5-ytq" firstAttribute="centerX" secondItem="2b6-pp-tju" secondAttribute="centerX" id="AO9-lu-x5k"/>
+                            <constraint firstItem="Y33-e1-bJh" firstAttribute="height" secondItem="SYH-ah-R9D" secondAttribute="height" id="Aeq-8h-0Eu"/>
+                            <constraint firstItem="HdG-c0-ksy" firstAttribute="height" secondItem="iqg-RS-Cft" secondAttribute="height" id="B5g-EI-LMJ"/>
                             <constraint firstAttribute="bottom" secondItem="iqg-RS-Cft" secondAttribute="bottom" constant="16" id="C5I-EN-n5r"/>
                             <constraint firstItem="2b6-pp-tju" firstAttribute="leading" secondItem="SYH-ah-R9D" secondAttribute="trailing" constant="16" id="CR1-Gw-aJO"/>
                             <constraint firstItem="2b6-pp-tju" firstAttribute="width" secondItem="TA9-Kk-jLh" secondAttribute="width" id="H5a-XQ-YOh"/>
                             <constraint firstItem="2b6-pp-tju" firstAttribute="top" secondItem="3A3-1r-2cc" secondAttribute="top" constant="16" id="IsV-ja-H7s"/>
                             <constraint firstItem="yoA-dU-qfa" firstAttribute="height" secondItem="2b6-pp-tju" secondAttribute="height" id="J4p-ni-Iug"/>
+                            <constraint firstItem="HdG-c0-ksy" firstAttribute="centerX" secondItem="iqg-RS-Cft" secondAttribute="centerX" id="MaR-qY-S40"/>
+                            <constraint firstItem="LrO-x5-ytq" firstAttribute="centerY" secondItem="2b6-pp-tju" secondAttribute="centerY" id="Mm6-NY-AeR"/>
                             <constraint firstItem="TA9-Kk-jLh" firstAttribute="leading" secondItem="SYH-ah-R9D" secondAttribute="trailing" constant="232" id="ODa-TH-iuQ"/>
                             <constraint firstItem="yoA-dU-qfa" firstAttribute="width" secondItem="Q0V-tf-VcS" secondAttribute="width" id="Onq-u5-Ov3"/>
                             <constraint firstItem="iqg-RS-Cft" firstAttribute="top" secondItem="SYH-ah-R9D" secondAttribute="bottom" constant="8" id="PR1-jZ-Qba"/>
                             <constraint firstItem="TA9-Kk-jLh" firstAttribute="top" secondItem="3A3-1r-2cc" secondAttribute="top" constant="16" id="QDD-cP-ZBK"/>
+                            <constraint firstItem="LrO-x5-ytq" firstAttribute="width" secondItem="2b6-pp-tju" secondAttribute="width" id="RuH-uR-Djk"/>
                             <constraint firstAttribute="bottom" secondItem="yoA-dU-qfa" secondAttribute="bottom" constant="16" id="STs-Ku-kel"/>
+                            <constraint firstItem="7kh-43-CSE" firstAttribute="centerX" secondItem="yoA-dU-qfa" secondAttribute="centerX" id="Swg-3l-i4z"/>
+                            <constraint firstItem="HdG-c0-ksy" firstAttribute="width" secondItem="iqg-RS-Cft" secondAttribute="width" id="U1n-B6-Bfy"/>
                             <constraint firstItem="Q0V-tf-VcS" firstAttribute="height" secondItem="TA9-Kk-jLh" secondAttribute="height" id="Ugc-SH-f54"/>
                             <constraint firstItem="iqg-RS-Cft" firstAttribute="width" secondItem="yoA-dU-qfa" secondAttribute="width" id="WCp-ta-eZG"/>
                             <constraint firstItem="TA9-Kk-jLh" firstAttribute="leading" secondItem="2b6-pp-tju" secondAttribute="trailing" constant="16" id="Wkr-or-TGT"/>
+                            <constraint firstItem="giC-2Y-yia" firstAttribute="centerY" secondItem="TA9-Kk-jLh" secondAttribute="centerY" id="ZdO-8R-6Pc"/>
                             <constraint firstItem="SYH-ah-R9D" firstAttribute="leading" secondItem="3A3-1r-2cc" secondAttribute="leading" constant="16" id="a4F-gf-i5l"/>
+                            <constraint firstItem="uMj-SV-h1I" firstAttribute="centerX" secondItem="Q0V-tf-VcS" secondAttribute="centerX" id="cFV-b5-nyU"/>
                             <constraint firstAttribute="bottom" secondItem="Q0V-tf-VcS" secondAttribute="bottom" constant="16" id="cOz-79-enD"/>
+                            <constraint firstItem="uMj-SV-h1I" firstAttribute="centerY" secondItem="Q0V-tf-VcS" secondAttribute="centerY" id="d1q-gH-gHF"/>
                             <constraint firstItem="SYH-ah-R9D" firstAttribute="width" secondItem="2b6-pp-tju" secondAttribute="width" id="dgj-7o-qLw"/>
                             <constraint firstItem="SYH-ah-R9D" firstAttribute="width" secondItem="TA9-Kk-jLh" secondAttribute="width" id="fbF-8V-y1p"/>
                             <constraint firstItem="SYH-ah-R9D" firstAttribute="top" secondItem="3A3-1r-2cc" secondAttribute="top" constant="16" id="fil-Kj-G4I"/>
                             <constraint firstItem="yoA-dU-qfa" firstAttribute="top" secondItem="2b6-pp-tju" secondAttribute="bottom" constant="8" id="fuF-s3-a5t"/>
                             <constraint firstItem="Q0V-tf-VcS" firstAttribute="leading" secondItem="iqg-RS-Cft" secondAttribute="trailing" constant="232" id="hf4-Gq-oYZ"/>
+                            <constraint firstItem="giC-2Y-yia" firstAttribute="width" secondItem="TA9-Kk-jLh" secondAttribute="width" id="jXz-GB-sKu"/>
+                            <constraint firstItem="uMj-SV-h1I" firstAttribute="width" secondItem="Q0V-tf-VcS" secondAttribute="width" id="jtA-sK-kEA"/>
+                            <constraint firstItem="Y33-e1-bJh" firstAttribute="width" secondItem="SYH-ah-R9D" secondAttribute="width" id="k6e-aY-1xj"/>
                             <constraint firstItem="yoA-dU-qfa" firstAttribute="leading" secondItem="iqg-RS-Cft" secondAttribute="trailing" constant="16" id="lPY-yd-ohP"/>
                             <constraint firstItem="Q0V-tf-VcS" firstAttribute="top" secondItem="TA9-Kk-jLh" secondAttribute="bottom" constant="8.5" id="lWb-tq-D3n"/>
+                            <constraint firstItem="yoA-dU-qfa" firstAttribute="leading" secondItem="HdG-c0-ksy" secondAttribute="trailing" constant="16" id="lpT-MT-hPM"/>
+                            <constraint firstItem="giC-2Y-yia" firstAttribute="height" secondItem="TA9-Kk-jLh" secondAttribute="height" id="mHP-4W-crA"/>
+                            <constraint firstItem="7kh-43-CSE" firstAttribute="height" secondItem="yoA-dU-qfa" secondAttribute="height" id="mtE-Kc-DH7"/>
                             <constraint firstItem="iqg-RS-Cft" firstAttribute="leading" secondItem="tA2-cB-jXf" secondAttribute="leading" constant="16" id="nOw-WR-HY0"/>
                             <constraint firstItem="iqg-RS-Cft" firstAttribute="width" secondItem="Q0V-tf-VcS" secondAttribute="width" id="nYX-iQ-VRD"/>
+                            <constraint firstItem="7kh-43-CSE" firstAttribute="width" secondItem="yoA-dU-qfa" secondAttribute="width" id="scf-ZK-jR5"/>
+                            <constraint firstItem="giC-2Y-yia" firstAttribute="centerX" secondItem="TA9-Kk-jLh" secondAttribute="centerX" id="uNE-C0-enF"/>
+                            <constraint firstItem="7kh-43-CSE" firstAttribute="centerY" secondItem="yoA-dU-qfa" secondAttribute="centerY" id="vwd-Fp-J4q"/>
+                            <constraint firstItem="Y33-e1-bJh" firstAttribute="centerY" secondItem="SYH-ah-R9D" secondAttribute="centerY" id="zih-g5-cUl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3A3-1r-2cc"/>
                     </view>
@@ -176,4 +231,7 @@
     <resources>
         <image name="blank_bg" width="551" height="390"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ZcW-7C-cG8"/>
+    </inferredMetricsTieBreakers>
 </document>
