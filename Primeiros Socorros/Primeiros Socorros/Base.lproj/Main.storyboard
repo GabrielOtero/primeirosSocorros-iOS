@@ -170,6 +170,7 @@
                             <constraint firstItem="7kh-43-CSE" firstAttribute="centerY" secondItem="yoA-dU-qfa" secondAttribute="centerY" id="vwd-Fp-J4q"/>
                             <constraint firstItem="Y33-e1-bJh" firstAttribute="centerY" secondItem="SYH-ah-R9D" secondAttribute="centerY" id="zih-g5-cUl"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="B38-JP-XkU"/>
                     </view>
                     <navigationItem key="navigationItem" id="3ur-RY-saJ"/>
                 </viewController>
