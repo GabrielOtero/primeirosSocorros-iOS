@@ -37,6 +37,7 @@
                                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="whatIsClick:" destination="9WW-rV-1eR" eventType="touchUpInside" id="FU3-0j-CcJ"/>
                                                     <segue destination="703-4V-yAM" kind="show" id="ZcW-7C-cG8"/>
                                                 </connections>
                                             </button>
@@ -47,6 +48,7 @@
                                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="traumaClick:" destination="9WW-rV-1eR" eventType="touchUpInside" id="BFp-wE-igB"/>
                                                     <segue destination="703-4V-yAM" kind="show" id="r8r-y4-paO"/>
                                                 </connections>
                                             </button>
