@@ -8,6 +8,49 @@
 
 import UIKit
 
+class LanguageManager {
+    static let shared: LanguageManager = LanguageManager()
+    var state: Language = .portuguese
+}
+
+enum Language {
+    case english
+    case portuguese
+    case spanish
+    
+    var currentLanguage: String {
+        switch self {
+        case .english:
+            return "en"
+        case .portuguese:
+            return "pt"
+        case .spanish:
+            return "es"
+        }
+    }
+    
+    var trauma: String {
+        switch self {
+        case .english:
+            return "Trauma"
+        case .portuguese:
+            return "Trauma"
+        case .spanish:
+            return "Trauma"
+        }
+    }
+    
+    var imageTrauma0: UIImage? {
+        switch self {
+        case .english:
+            return UIImage(named: "trauma0en")
+        case .portuguese:
+            return UIImage(named: "trauma0pt")
+        case .spanish:
+            return UIImage(named: "trauma0es")
+        }
+    }
+}
 /*
  A controller object that manages a simple model -- a collection of month names.
  
@@ -21,13 +64,13 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
     var pageData: [String] = []
+    var type = ""
 
 
-    override init() {
+    init(_ type: String) {
         super.init()
-        // Create the data model.
-        let dateFormatter = DateFormatter()
-        pageData = dateFormatter.monthSymbols
+        pageData = ["1", "2", "3", "4"]
+        self.type = type
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -38,7 +81,8 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]
+        dataViewController.dataObject = self.pageData[index]// +  " " + self.type //pq se eu concateno só aparece 1 pagina?
+        dataViewController.titlePage = "\(self.pageData[index]) \(self.type)"
         return dataViewController
     }
 
