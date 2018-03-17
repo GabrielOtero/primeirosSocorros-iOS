@@ -101,6 +101,9 @@
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyR-sL-ndm">
                                 <rect key="frame" x="460" y="6" width="45" height="30"/>
                                 <state key="normal" backgroundImage="brazil_flag"/>
+                                <connections>
+                                    <action selector="changeToPortuguese:" destination="9WW-rV-1eR" eventType="touchUpInside" id="bO6-AB-AUo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzp-Au-A1U">
                                 <rect key="frame" x="525" y="6" width="45" height="30"/>
@@ -132,6 +135,7 @@
                         <outlet property="chokeBtn" destination="giC-2Y-yia" id="Guz-XN-sWh"/>
                         <outlet property="englishBtn" destination="LKU-rg-fJu" id="CyG-3d-YCI"/>
                         <outlet property="faintBtn" destination="7kh-43-CSE" id="ipy-i8-InG"/>
+                        <outlet property="portugueseBtn" destination="FyR-sL-ndm" id="Rof-L6-yEi"/>
                         <outlet property="seizureBtn" destination="HdG-c0-ksy" id="yY4-oQ-mAR"/>
                         <outlet property="traumaBtn" destination="LrO-x5-ytq" id="3rv-SG-nt2"/>
                         <outlet property="whatIsBtn" destination="Y33-e1-bJh" id="F9i-Tu-1js"/>

@@ -13,6 +13,9 @@ class MenuViewController: UIViewController {
     var pageViewController: UIPageViewController?
     
     @IBOutlet weak var englishBtn: UIButton!
+    @IBOutlet weak var portugueseBtn: UIButton!
+    
+    
     @IBOutlet weak var whatIsBtn: UIButton!
     @IBOutlet weak var traumaBtn: UIButton!
     @IBOutlet weak var chokeBtn: UIButton!
@@ -39,6 +42,17 @@ class MenuViewController: UIViewController {
         arrestBtn.setTitle("Cadiac Arrest", for: .normal)
 
         LanguageManager.shared.state = .english
+    }
+    
+    @IBAction func changeToPortuguese(_ sender: UIButton) {
+        whatIsBtn.setTitle("O que é", for: .normal)
+        traumaBtn.setTitle("Trauma", for: .normal)
+        chokeBtn.setTitle("Engasgo", for: .normal)
+        seizureBtn.setTitle("Convulsão", for: .normal)
+        faintBtn.setTitle("Desmaio", for: .normal)
+        arrestBtn.setTitle("Parada Cardiaca", for: .normal)
+        
+        LanguageManager.shared.state = .portuguese
     }
     
 }
