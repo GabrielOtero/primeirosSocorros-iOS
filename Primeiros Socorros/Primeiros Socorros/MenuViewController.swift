@@ -67,6 +67,13 @@ class MenuViewController: UIViewController {
         arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
     }
     
+//    @IBAction func whatIsClick(_ sender: UIButton) {
+//        LanguageManager.shared.injury = .whatIs
+//    }
+//
+//    @IBAction func traumaClick(_ sender: UIButton) {
+//        LanguageManager.shared.injury = .trauma
+//    }
 }
 
 

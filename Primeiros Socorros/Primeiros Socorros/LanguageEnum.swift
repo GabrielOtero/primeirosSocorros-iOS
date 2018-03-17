@@ -49,9 +49,9 @@ enum Language {
     var choking: String {
         switch self {
         case .english:
-            return "Esgasgo"
-        case .portuguese:
             return "Choking"
+        case .portuguese:
+            return "Esgasgo"
         case .spanish:
             return "Atoramiento"
         }
