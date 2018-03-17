@@ -15,7 +15,7 @@ enum Injury {
     case fainting
     case arrest
     
-    var currentInjury: String {
+    var current: String {
         switch self {
         case .whatIs:
             return "whatIs"
@@ -29,6 +29,23 @@ enum Injury {
             return "fainting"
         case .arrest:
             return "arrest"
+        }
+    }
+    
+    var size: Int {
+        switch self {
+        case .whatIs:
+            return 1
+        case .trauma:
+            return 6
+        case .choking:
+            return 6
+        case .seizure:
+            return 5
+        case .fainting:
+            return 3
+        case .arrest:
+            return 7
         }
     }
 }
