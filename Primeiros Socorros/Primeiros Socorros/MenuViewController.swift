@@ -16,7 +16,6 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var portugueseBtn: UIButton!
     @IBOutlet weak var spanishBtn: UIButton!
     
-    
     @IBOutlet weak var whatIsBtn: UIButton!
     @IBOutlet weak var traumaBtn: UIButton!
     @IBOutlet weak var chokeBtn: UIButton!
@@ -35,37 +34,37 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func changeToEnglish(_ sender: UIButton) {
-        whatIsBtn.setTitle("What is", for: .normal)
-        traumaBtn.setTitle("Trauma", for: .normal)
-        chokeBtn.setTitle("Choking", for: .normal)
-        seizureBtn.setTitle("Seizure", for: .normal)
-        faintBtn.setTitle("Fainting", for: .normal)
-        arrestBtn.setTitle("Cadiac Arrest", for: .normal)
-
         LanguageManager.shared.state = .english
+        
+        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
     }
     
     @IBAction func changeToPortuguese(_ sender: UIButton) {
-        whatIsBtn.setTitle("O que é", for: .normal)
-        traumaBtn.setTitle("Trauma", for: .normal)
-        chokeBtn.setTitle("Engasgo", for: .normal)
-        seizureBtn.setTitle("Convulsão", for: .normal)
-        faintBtn.setTitle("Desmaio", for: .normal)
-        arrestBtn.setTitle("Parada Cardiaca", for: .normal)
-        
         LanguageManager.shared.state = .portuguese
+        
+        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
     }
     
     
     @IBAction func changeToSpanish(_ sender: UIButton) {
-        whatIsBtn.setTitle("Que Son?", for: .normal)
-        traumaBtn.setTitle("Trauma", for: .normal)
-        chokeBtn.setTitle("Atoramiento", for: .normal)
-        seizureBtn.setTitle("Convulsión", for: .normal)
-        faintBtn.setTitle("Desmayo", for: .normal)
-        arrestBtn.setTitle("Paro Cardiaco", for: .normal)
-        
         LanguageManager.shared.state = .spanish
+        
+        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
     }
     
 }

@@ -7,50 +7,6 @@
 //
 
 import UIKit
-
-class LanguageManager {
-    static let shared: LanguageManager = LanguageManager()
-    var state: Language = .portuguese
-}
-
-enum Language {
-    case english
-    case portuguese
-    case spanish
-    
-    var currentLanguage: String {
-        switch self {
-        case .english:
-            return "en"
-        case .portuguese:
-            return "pt"
-        case .spanish:
-            return "es"
-        }
-    }
-    
-    var trauma: String {
-        switch self {
-        case .english:
-            return "Trauma"
-        case .portuguese:
-            return "Trauma"
-        case .spanish:
-            return "Trauma"
-        }
-    }
-    
-    var imageTrauma0: UIImage? {
-        switch self {
-        case .english:
-            return UIImage(named: "trauma0en")
-        case .portuguese:
-            return UIImage(named: "trauma0pt")
-        case .spanish:
-            return UIImage(named: "trauma0es")
-        }
-    }
-}
 /*
  A controller object that manages a simple model -- a collection of month names.
  
