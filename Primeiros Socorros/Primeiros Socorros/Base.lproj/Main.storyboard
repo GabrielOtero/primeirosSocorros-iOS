@@ -108,6 +108,9 @@
                             <button opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzp-Au-A1U">
                                 <rect key="frame" x="525" y="6" width="45" height="30"/>
                                 <state key="normal" backgroundImage="spain_flag"/>
+                                <connections>
+                                    <action selector="changeToSpanish:" destination="9WW-rV-1eR" eventType="touchUpInside" id="sfT-gP-gtb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -137,6 +140,7 @@
                         <outlet property="faintBtn" destination="7kh-43-CSE" id="ipy-i8-InG"/>
                         <outlet property="portugueseBtn" destination="FyR-sL-ndm" id="Rof-L6-yEi"/>
                         <outlet property="seizureBtn" destination="HdG-c0-ksy" id="yY4-oQ-mAR"/>
+                        <outlet property="spanishBtn" destination="hzp-Au-A1U" id="wIr-12-p4V"/>
                         <outlet property="traumaBtn" destination="LrO-x5-ytq" id="3rv-SG-nt2"/>
                         <outlet property="whatIsBtn" destination="Y33-e1-bJh" id="F9i-Tu-1js"/>
                     </connections>
