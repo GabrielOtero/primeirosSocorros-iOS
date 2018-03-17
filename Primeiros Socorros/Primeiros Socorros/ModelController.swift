@@ -37,8 +37,8 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]// +  " " + self.type //pq se eu concateno só aparece 1 pagina?
-        dataViewController.titlePage = "\(self.pageData[index]) \(LanguageManager.shared.injury.current)"
+        dataViewController.dataObject = self.pageData[index]
+
         return dataViewController
     }
 

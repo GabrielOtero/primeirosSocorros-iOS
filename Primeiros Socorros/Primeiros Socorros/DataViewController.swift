@@ -26,7 +26,7 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dataLabel?.text = titlePage + LanguageManager.shared.state.currentLanguage
+        self.dataLabel?.text = titlePage + LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
     }
 
 
