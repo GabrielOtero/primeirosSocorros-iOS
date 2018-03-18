@@ -176,17 +176,30 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blank_bg" translatesAutoresizingMaskIntoConstraints="NO" id="cJs-ij-fBV">
                                 <rect key="frame" x="57.5" y="-8" width="551" height="390"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-4K-heD">
+                                <rect key="frame" x="20" y="20" width="64" height="25"/>
+                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="17"/>
+                                <state key="normal" title="&lt; Voltar"/>
+                                <connections>
+                                    <segue destination="9WW-rV-1eR" kind="show" id="JqJ-uV-ian"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="Bwc-4K-heD" firstAttribute="leading" secondItem="K9I-jD-KjA" secondAttribute="leading" constant="20" id="Atd-eb-B2J"/>
                             <constraint firstItem="cJs-ij-fBV" firstAttribute="centerY" secondItem="K9I-jD-KjA" secondAttribute="centerY" id="XNx-sE-lsq"/>
                             <constraint firstItem="cJs-ij-fBV" firstAttribute="centerX" secondItem="K9I-jD-KjA" secondAttribute="centerX" id="cKg-jK-kn6"/>
+                            <constraint firstItem="Bwc-4K-heD" firstAttribute="top" secondItem="K9I-jD-KjA" secondAttribute="top" constant="20" id="uZA-PX-i3X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K9I-jD-KjA"/>
                     </view>
+                    <connections>
+                        <outlet property="backBtn" destination="Bwc-4K-heD" id="PD8-9s-XPv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="935.20000000000005" y="-243.32833583208398"/>
+            <point key="canvasLocation" x="935.08245877061472" y="-244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Gb5-bt-78t">
@@ -213,6 +226,7 @@
         <image name="spain_flag" width="170" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r8r-y4-paO"/>
+        <segue reference="ZcW-7C-cG8"/>
+        <segue reference="JqJ-uV-ian"/>
     </inferredMetricsTieBreakers>
 </document>

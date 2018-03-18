@@ -10,9 +10,10 @@ import UIKit
 
 class DataViewController: UIViewController {
 
-    @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
 
+    @IBOutlet weak var backBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -25,7 +26,8 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dataLabel?.text = LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
+        backBtn.setTitle(LanguageManager.shared.state.back, for: .normal)
+//        self.dataLabel?.text = LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
     }
 
 

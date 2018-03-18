@@ -24,6 +24,17 @@ enum Language {
         }
     }
     
+    var back: String{
+        switch self {
+        case .english:
+            return "< Go Back"
+        case .portuguese:
+            return "< Voltar"
+        case .spanish:
+            return "< Volver"
+        }
+    }
+    
     var whatIs: String {
         switch self {
         case .english:
