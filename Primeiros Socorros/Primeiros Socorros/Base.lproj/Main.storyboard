@@ -165,6 +165,21 @@
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="-243.32833583208398"/>
         </scene>
+        <!--Now Choose View Controller-->
+        <scene sceneID="5ZL-yM-GkU">
+            <objects>
+                <viewController storyboardIdentifier="NowChooseViewController" id="6Zz-Iq-lS3" customClass="NowChooseViewController" customModule="Primeiros_Socorros" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pxe-AG-WJd">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Hdd-cw-dUU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WiJ-fA-sMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="-1077"/>
+        </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
             <objects>

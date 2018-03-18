@@ -32,20 +32,27 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
     }
 
-    func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
+    func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> UIViewController? {
         // Return the data view controller for the given index.
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
-
-        // Create a new view controller and pass suitable data.
-        let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]
-
-        return dataViewController
+        if(index == LanguageManager.shared.injury.size - 1){
+            // Create a new view controller and pass suitable data.
+            let nowChooseViewController = storyboard.instantiateViewController(withIdentifier: "NowChooseViewController") as! NowChooseViewController
+            nowChooseViewController.dataObject = self.pageData[index]
+            
+            return nowChooseViewController
+        }else{
+            // Create a new view controller and pass suitable data.
+            let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
+            dataViewController.dataObject = self.pageData[index]
+            
+            return dataViewController
+        }
     }
 
-    func indexOfViewController(_ viewController: DataViewController) -> Int {
+    func indexOfViewController(_ viewController: AsdViewController) -> Int {
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
         return pageData.index(of: viewController.dataObject) ?? NSNotFound
@@ -54,7 +61,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! DataViewController)
+        var index = self.indexOfViewController(viewController as! AsdViewController)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
@@ -64,7 +71,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! DataViewController)
+        var index = self.indexOfViewController(viewController as! AsdViewController)
         if index == NSNotFound {
             return nil
         }
