@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AsdViewController: UIViewController {
+class SliderPageViewController: UIViewController {
     var dataObject: String = ""
     
     override func viewDidLoad() {

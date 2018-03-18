@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataViewController: AsdViewController {
+class DataViewController: SliderPageViewController {
     @IBOutlet weak var backBtn: UIButton!
     
     override func viewDidLoad() {

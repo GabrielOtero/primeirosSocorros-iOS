@@ -52,7 +52,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         }
     }
 
-    func indexOfViewController(_ viewController: AsdViewController) -> Int {
+    func indexOfViewController(_ viewController: SliderPageViewController) -> Int {
         // Return the index of the given data view controller.
         // For simplicity, this implementation uses a static array of model objects and the view controller stores the model object; you can therefore use the model object to identify the index.
         return pageData.index(of: viewController.dataObject) ?? NSNotFound
@@ -61,7 +61,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     // MARK: - Page View Controller Data Source
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! AsdViewController)
+        var index = self.indexOfViewController(viewController as! SliderPageViewController)
         if (index == 0) || (index == NSNotFound) {
             return nil
         }
@@ -71,7 +71,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     }
 
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-        var index = self.indexOfViewController(viewController as! AsdViewController)
+        var index = self.indexOfViewController(viewController as! SliderPageViewController)
         if index == NSNotFound {
             return nil
         }
