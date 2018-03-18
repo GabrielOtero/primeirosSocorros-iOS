@@ -9,6 +9,11 @@
 import UIKit
 
 class NowChooseViewController: SliderPageViewController {
+    
+    @IBOutlet weak var nowChosseBtn: UIButton!
+    @IBOutlet weak var backToMenuBtn: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -17,5 +22,11 @@ class NowChooseViewController: SliderPageViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }    
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        nowChosseBtn.setTitle(LanguageManager.shared.state.nowAnswer, for: .normal)
+        backToMenuBtn.setTitle(LanguageManager.shared.state.backToMenu, for: .normal)
+    }
 }

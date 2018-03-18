@@ -207,6 +207,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hdd-cw-dUU"/>
                     </view>
+                    <connections>
+                        <outlet property="backToMenuBtn" destination="k16-ZX-Apz" id="A8A-11-BG5"/>
+                        <outlet property="nowChosseBtn" destination="cRJ-47-lDf" id="6r4-A1-Mb1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiJ-fA-sMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
