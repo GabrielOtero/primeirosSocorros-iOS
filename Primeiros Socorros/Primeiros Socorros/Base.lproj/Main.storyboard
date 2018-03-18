@@ -172,13 +172,45 @@
                     <view key="view" contentMode="scaleToFill" id="pxe-AG-WJd">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ksl-nN-eOe">
+                                <rect key="frame" x="20" y="100" width="627" height="175"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRJ-47-lDf">
+                                        <rect key="frame" x="0.0" y="0.0" width="627" height="57.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                        <state key="normal" title="Agora Responda...">
+                                            <color key="titleColor" red="0.99203723669052124" green="0.9921455979347229" blue="0.9961208701133728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k16-ZX-Apz">
+                                        <rect key="frame" x="0.0" y="117.5" width="627" height="57.5"/>
+                                        <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                        <state key="normal" title="Voltar para Menu!">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="9WW-rV-1eR" kind="show" id="qSb-6G-ddV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215686274506" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hdd-cw-dUU" firstAttribute="trailing" secondItem="ksl-nN-eOe" secondAttribute="trailing" constant="20" id="18V-He-UrK"/>
+                            <constraint firstItem="ksl-nN-eOe" firstAttribute="leading" secondItem="Hdd-cw-dUU" secondAttribute="leading" constant="20" id="PFH-aB-XES"/>
+                            <constraint firstItem="Hdd-cw-dUU" firstAttribute="bottom" secondItem="ksl-nN-eOe" secondAttribute="bottom" constant="100" id="aHc-ly-qmh"/>
+                            <constraint firstItem="ksl-nN-eOe" firstAttribute="top" secondItem="Hdd-cw-dUU" secondAttribute="top" constant="100" id="jK7-rL-kKc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hdd-cw-dUU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WiJ-fA-sMb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="-1077"/>
+            <point key="canvasLocation" x="878.41079460269873" y="-1077.5999999999999"/>
         </scene>
         <!--Data View Controller-->
         <scene sceneID="snT-py-3hH">
@@ -242,6 +274,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZcW-7C-cG8"/>
-        <segue reference="JqJ-uV-ian"/>
+        <segue reference="qSb-6G-ddV"/>
     </inferredMetricsTieBreakers>
 </document>
