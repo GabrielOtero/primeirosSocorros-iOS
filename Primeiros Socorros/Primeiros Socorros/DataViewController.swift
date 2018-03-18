@@ -27,7 +27,7 @@ class DataViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         backBtn.setTitle(LanguageManager.shared.state.back, for: .normal)
-//        self.dataLabel?.text = LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
+
     }
 
 
