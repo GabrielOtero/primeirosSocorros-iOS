@@ -20,13 +20,16 @@ import UIKit
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
     var pageData: [String] = []
-    var type = ""
 
-
-    init(_ type: String) {
+    override init() {
         super.init()
-        pageData = ["1", "2", "3", "4"]
-        self.type = type
+        pageData = []
+        
+        var i = 1
+        while i <= LanguageManager.shared.injury.size {
+            pageData.append(String(i))
+            i = i + 1
+        }
     }
 
     func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {

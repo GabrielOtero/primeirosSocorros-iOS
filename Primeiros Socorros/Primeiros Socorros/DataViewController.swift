@@ -12,7 +12,6 @@ class DataViewController: UIViewController {
 
     @IBOutlet weak var dataLabel: UILabel!
     var dataObject: String = ""
-    var titlePage: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +25,7 @@ class DataViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.dataLabel?.text = titlePage + LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
+        self.dataLabel?.text = LanguageManager.shared.state.currentLanguage + LanguageManager.shared.injury.current + String(LanguageManager.shared.injury.size)
     }
 
 
