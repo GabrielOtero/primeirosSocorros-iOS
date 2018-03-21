@@ -181,6 +181,31 @@
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="-243.32833583208398"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="C2A-H7-Rcp">
+            <objects>
+                <viewController id="fJF-Tf-XSI" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U4Q-Ug-6Lc">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vaa-Ok-yt0">
+                                <rect key="frame" x="301" y="75" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="PLg-cB-Ftw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbK-oO-aiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1109" y="-2218"/>
+        </scene>
         <!--Now Choose View Controller-->
         <scene sceneID="5ZL-yM-GkU">
             <objects>
@@ -199,6 +224,9 @@
                                         <state key="normal" title="Agora Responda...">
                                             <color key="titleColor" red="0.99203723669052124" green="0.9921455979347229" blue="0.9961208701133728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fJF-Tf-XSI" kind="show" id="glc-NC-238"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k16-ZX-Apz">
                                         <rect key="frame" x="0.0" y="117.5" width="627" height="57.5"/>
@@ -295,6 +323,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ZcW-7C-cG8"/>
-        <segue reference="JqJ-uV-ian"/>
+        <segue reference="qSb-6G-ddV"/>
     </inferredMetricsTieBreakers>
 </document>
