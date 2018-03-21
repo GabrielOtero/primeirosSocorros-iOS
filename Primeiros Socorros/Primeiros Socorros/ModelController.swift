@@ -37,7 +37,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
-        if(index == LanguageManager.shared.injury.size - 1){
+        if(index == LanguageManager.shared.injury.size - 1 && LanguageManager.shared.injury != Injury.whatIs){
             // Create a new view controller and pass suitable data.
             let nowChooseViewController = storyboard.instantiateViewController(withIdentifier: "NowChooseViewController") as! NowChooseViewController
             nowChooseViewController.dataObject = self.pageData[index]
