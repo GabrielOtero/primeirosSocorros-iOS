@@ -10,6 +10,7 @@ import UIKit
 
 class DataViewController: SliderPageViewController {
     @IBOutlet weak var backBtn: UIButton!
+    @IBOutlet weak var imageStep: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,8 @@ class DataViewController: SliderPageViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         backBtn.setTitle(LanguageManager.shared.state.back, for: .normal)
+        let image = LanguageManager.shared.injury.current + self.index + LanguageManager.shared.state.currentLanguage
+        imageStep.image = UIImage(named: image)
 
     }
 

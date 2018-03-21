@@ -18,7 +18,7 @@ enum Injury {
     var current: String {
         switch self {
         case .whatIs:
-            return "whatIs"
+            return "what"
         case .trauma:
             return "trauma"
         case .choking:

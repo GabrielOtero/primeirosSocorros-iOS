@@ -10,6 +10,7 @@ import UIKit
 
 class SliderPageViewController: UIViewController {
     var dataObject: String = ""
+    var index : String = "0"
     
     override func viewDidLoad() {
         super.viewDidLoad()
