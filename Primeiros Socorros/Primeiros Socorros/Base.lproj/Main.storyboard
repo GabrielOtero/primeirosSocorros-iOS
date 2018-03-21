@@ -73,6 +73,10 @@
                                                 <state key="normal" title="Convulsão" backgroundImage="blank_bg">
                                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="seizureAction:" destination="9WW-rV-1eR" eventType="touchUpInside" id="L55-48-12u"/>
+                                                    <segue destination="703-4V-yAM" kind="show" id="oS5-ka-GsE"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kh-43-CSE">
                                                 <rect key="frame" x="213.5" y="0.0" width="208" height="156"/>
