@@ -98,7 +98,7 @@ class MenuViewController: UIViewController {
     @IBAction func chokingClick(_ sender: UIButton) {
         LanguageManager.shared.injury = .choking
     }
-    @IBAction func seizureAction(_ sender: UIButton) {
+    @IBAction func seizureClick(_ sender: UIButton) {
         LanguageManager.shared.injury = .seizure
     }
 }
