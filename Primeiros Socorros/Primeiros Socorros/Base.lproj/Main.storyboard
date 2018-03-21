@@ -95,6 +95,10 @@
                                                 <state key="normal" title="Parada cardiaca" backgroundImage="blank_bg">
                                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="arrestClick:" destination="9WW-rV-1eR" eventType="touchUpInside" id="8XE-Mt-PpJ"/>
+                                                    <segue destination="703-4V-yAM" kind="show" id="3FF-Y3-Ro7"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>

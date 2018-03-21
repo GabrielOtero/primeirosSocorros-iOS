@@ -104,6 +104,9 @@ class MenuViewController: UIViewController {
     @IBAction func faintClick(_ sender: UIButton) {
         LanguageManager.shared.injury = .fainting
     }
+    @IBAction func arrestClick(_ sender: UIButton) {
+        LanguageManager.shared.injury = .arrest
+    }
 }
 
 
