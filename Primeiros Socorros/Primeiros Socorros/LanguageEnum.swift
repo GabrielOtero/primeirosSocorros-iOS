@@ -122,16 +122,91 @@ enum Language {
             return "Paro Cardiaco"
         }
     }
-
     
-    var imageTrauma0: UIImage? {
-        switch self {
-        case .english:
-            return UIImage(named: "trauma0en")
-        case .portuguese:
-            return UIImage(named: "trauma0pt")
-        case .spanish:
-            return UIImage(named: "trauma0es")
+    var q1 : String {
+        switch LanguageManager.shared.injury {
+        case .trauma:
+            switch self{
+                case .english:
+                        return "What is the first thing to do in a trauma situation?"
+                case .portuguese:
+                        return "Qual a primeira coisa a se fazer em uma situação de trauma?"
+                case .spanish:
+                        return "¿Qué es lo primero que se debe hacer ante un trauma?"
+            }
+        case .choking:
+            switch self{
+                case .english:
+                    return "What is a situation of choking?"
+                case .portuguese:
+                    return "O que é um engasgo?"
+                case .spanish:
+                    return "¿Qué es el atoramiento?"
+            }
+        case .seizure:
+            switch self{
+                case .english:
+                    return "What is a seizure?"
+                case .portuguese:
+                    return "O que é Convulsão?"
+                case .spanish:
+                    return "¿Qué es una convulsión?"
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "What is fainting?"
+            case .portuguese:
+                return "O que é desmaio?"
+            case .spanish:
+                return "¿Qué es un desmayo?"
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "What is a cardiorespiratory arrest?"
+            case .portuguese:
+                return "O que é uma parada cardiorrespiratória?"
+            case .spanish:
+                return "¿Qué es un paro cardiorrespiratorio?"
+            }
+        default:
+            return "No Questions Yet"
         }
+        
+    }
+    
+    var q2 : String {
+        switch LanguageManager.shared.injury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "dsfsfdd"
+            case .portuguese:
+                return "sdfaf"
+            case .spanish:
+                return "sdfsadds"
+            }
+        default:
+            return "No Question"
+        }
+        
+    }
+    
+    var q3 : String {
+        switch LanguageManager.shared.injury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "dsfsfdd"
+            case .portuguese:
+                return "sdfaf"
+            case .spanish:
+                return "sdfsadds"
+            }
+        default:
+            return "No Question"
+        }
+        
     }
 }
