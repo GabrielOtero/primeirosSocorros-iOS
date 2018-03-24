@@ -755,7 +755,7 @@ enum Language {
             case .portuguese:
                 return "Esmagamento."
             case .spanish:
-                return "Aplastamiento"
+                return "Aplastamiento."
             }
         case .choking:
             switch self{
@@ -797,4 +797,58 @@ enum Language {
             return "No Questions Yet"
         }
     }
+    
+    var q3opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "It is a type of bone fracture."
+            case .portuguese:
+                return "É um tipo de fratura óssea."
+            case .spanish:
+                return "Es un tipo de fractura ósea."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Hit the baby's back 5 times."
+            case .portuguese:
+                return "Golpear 5 vezes as costas do bebê."
+            case .spanish:
+                return "Golpear 5 veces la espalda del bebé."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Remove everything that is close to the person."
+            case .portuguese:
+                return "Afastar tudo que estiver por perto da pessoa."
+            case .spanish:
+                return "Alejar todo lo que este cerca de ella."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Let the person stand and wait for medical help."
+            case .portuguese:
+                return "Deixar a pessoa de pé e esperar o socorro."
+            case .spanish:
+                return "Dejar a la persona de pie y esperar la ayuda."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Leave the person alone and seek for help."
+            case .portuguese:
+                return "Deixar a pessoa sozinha e procurar ajuda."
+            case .spanish:
+                return "Dejar sola a la persona y buscar ayuda."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    //TODO q3opt2
 }
