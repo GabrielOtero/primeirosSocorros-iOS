@@ -26,7 +26,7 @@ class NowChooseViewController: SliderPageViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        nowChosseBtn.setTitle(LanguageManager.shared.state.nowAnswer, for: .normal)
-        backToMenuBtn.setTitle(LanguageManager.shared.state.backToMenu, for: .normal)
+        nowChosseBtn.setTitle(LanguageManager.shared.currentLanguage.nowAnswer, for: .normal)
+        backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
     }
 }

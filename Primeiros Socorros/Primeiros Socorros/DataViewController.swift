@@ -24,8 +24,8 @@ class DataViewController: SliderPageViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        backBtn.setTitle(LanguageManager.shared.state.back, for: .normal)
-        let image = LanguageManager.shared.currentInjury.name + self.index + LanguageManager.shared.state.currentLanguage
+        backBtn.setTitle(LanguageManager.shared.currentLanguage.back, for: .normal)
+        let image = LanguageManager.shared.currentInjury.name + self.index + LanguageManager.shared.currentLanguage.currentLanguage
         imageStep.image = UIImage(named: image)
 
     }

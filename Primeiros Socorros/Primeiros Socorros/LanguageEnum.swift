@@ -157,7 +157,7 @@ enum Language {
             case .english:
                 return "Go to Cardiac Arrest!"
             case .portuguese:
-                return "Ir para parada cardáca!"
+                return "Ir para parada cardíaca!"
             case .spanish:
                 return "Ir a Paro Cardiaco"
             }

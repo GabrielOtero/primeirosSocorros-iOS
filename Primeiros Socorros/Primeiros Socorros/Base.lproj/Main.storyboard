@@ -94,6 +94,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uMj-SV-h1I">
                                                 <rect key="frame" x="426.5" y="0.0" width="208.5" height="156"/>
+                                                <accessibility key="accessibilityConfiguration">
+                                                    <accessibilityTraits key="traits" button="YES" staticText="YES"/>
+                                                </accessibility>
                                                 <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                 <state key="normal" title="Parada cardiaca" backgroundImage="blank_bg">
                                                     <color key="titleColor" red="0.89019607840000003" green="0.043137254899999998" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -303,26 +306,44 @@
                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-cG-zhW">
-                                                <rect key="frame" x="293" y="906" width="80" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="ENVIAR"/>
-                                                <connections>
-                                                    <segue destination="9WW-rV-1eR" kind="show" id="vh6-ea-7zy"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-cJ-aGd">
-                                                <rect key="frame" x="219" y="944" width="229" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="IR PARA PROXIMO"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-cJ-aGd">
+                                                <rect key="frame" x="20" y="920" width="627" height="60"/>
+                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="4ro-sg-ERy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                                <state key="normal" title="IR PARA PROXIMO">
+                                                    <color key="titleColor" red="0.99203723669052124" green="0.9921455979347229" blue="0.9961208701133728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
                                                 <connections>
                                                     <segue destination="703-4V-yAM" kind="show" id="gen-02-bq3"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-cG-zhW">
+                                                <rect key="frame" x="20" y="840" width="627" height="60"/>
+                                                <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                                <state key="normal" title="VOLTA PARA O MENU">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="9WW-rV-1eR" kind="show" id="vh6-ea-7zy"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="i91-cG-zhW" firstAttribute="height" secondItem="uxq-cJ-aGd" secondAttribute="height" id="3LS-Ow-L8X"/>
                                             <constraint firstAttribute="height" constant="1000" id="F2D-P1-lbZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="uxq-cJ-aGd" secondAttribute="trailing" constant="20" id="GC4-fU-LmC"/>
+                                            <constraint firstItem="i91-cG-zhW" firstAttribute="leading" secondItem="v4n-Zl-N3K" secondAttribute="leading" constant="20" id="N2w-CZ-Aj0"/>
+                                            <constraint firstItem="uxq-cJ-aGd" firstAttribute="top" secondItem="i91-cG-zhW" secondAttribute="bottom" constant="8" id="VqB-Qp-VyR"/>
+                                            <constraint firstAttribute="bottom" secondItem="uxq-cJ-aGd" secondAttribute="bottom" constant="20" id="Yjh-pS-Dtm"/>
+                                            <constraint firstItem="uxq-cJ-aGd" firstAttribute="top" secondItem="i91-cG-zhW" secondAttribute="bottom" constant="20" id="c5m-RS-o70"/>
+                                            <constraint firstItem="i91-cG-zhW" firstAttribute="width" secondItem="uxq-cJ-aGd" secondAttribute="width" id="hh9-ep-3iM"/>
+                                            <constraint firstItem="uxq-cJ-aGd" firstAttribute="leading" secondItem="v4n-Zl-N3K" secondAttribute="leading" constant="20" id="kc1-gs-iU3"/>
+                                            <constraint firstAttribute="trailing" secondItem="i91-cG-zhW" secondAttribute="trailing" constant="20" id="wIn-vD-FpZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -346,6 +367,7 @@
                     </view>
                     <size key="freeformSize" width="667" height="1000"/>
                     <connections>
+                        <outlet property="backToMenuBtn" destination="i91-cG-zhW" id="Ej2-Zq-8DC"/>
                         <outlet property="goToNextBtn" destination="uxq-cJ-aGd" id="6e5-gu-Fuv"/>
                         <outlet property="q1Label" destination="Vwe-pt-bKZ" id="n1V-Lv-ZuZ"/>
                         <outlet property="q2Label" destination="OfO-FJ-LPY" id="jsG-Gh-dZS"/>
@@ -472,7 +494,7 @@
         <image name="spain_flag" width="170" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gen-02-bq3"/>
+        <segue reference="r8r-y4-paO"/>
         <segue reference="vh6-ea-7zy"/>
     </inferredMetricsTieBreakers>
 </document>

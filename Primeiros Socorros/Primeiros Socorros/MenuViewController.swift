@@ -36,7 +36,7 @@ class MenuViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        switch LanguageManager.shared.state {
+        switch LanguageManager.shared.currentLanguage {
             case .english:
                 setEnglishLanguage()
             case .portuguese:
@@ -47,45 +47,45 @@ class MenuViewController: UIViewController {
     }
     
     fileprivate func setEnglishLanguage() {
-        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
-        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
-        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
-        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
-        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
-        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
+        whatIsBtn.setTitle(LanguageManager.shared.currentLanguage.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.currentLanguage.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.currentLanguage.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.currentLanguage.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.currentLanguage.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.currentLanguage.arrest, for: .normal)
     }
     
     @IBAction func changeToEnglish(_ sender: UIButton) {
-        LanguageManager.shared.state = .english
+        LanguageManager.shared.currentLanguage = .english
         setEnglishLanguage()
     }
     
     fileprivate func setPortugueseLanguage() {
-        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
-        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
-        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
-        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
-        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
-        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
+        whatIsBtn.setTitle(LanguageManager.shared.currentLanguage.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.currentLanguage.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.currentLanguage.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.currentLanguage.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.currentLanguage.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.currentLanguage.arrest, for: .normal)
     }
     
     @IBAction func changeToPortuguese(_ sender: UIButton) {
-        LanguageManager.shared.state = .portuguese
+        LanguageManager.shared.currentLanguage = .portuguese
         setPortugueseLanguage()
     }
     
     
     fileprivate func setSpanishLanguage() {
-        whatIsBtn.setTitle(LanguageManager.shared.state.whatIs, for: .normal)
-        traumaBtn.setTitle(LanguageManager.shared.state.trauma, for: .normal)
-        chokeBtn.setTitle(LanguageManager.shared.state.choking, for: .normal)
-        seizureBtn.setTitle(LanguageManager.shared.state.seizure, for: .normal)
-        faintBtn.setTitle(LanguageManager.shared.state.fainting, for: .normal)
-        arrestBtn.setTitle(LanguageManager.shared.state.arrest, for: .normal)
+        whatIsBtn.setTitle(LanguageManager.shared.currentLanguage.whatIs, for: .normal)
+        traumaBtn.setTitle(LanguageManager.shared.currentLanguage.trauma, for: .normal)
+        chokeBtn.setTitle(LanguageManager.shared.currentLanguage.choking, for: .normal)
+        seizureBtn.setTitle(LanguageManager.shared.currentLanguage.seizure, for: .normal)
+        faintBtn.setTitle(LanguageManager.shared.currentLanguage.fainting, for: .normal)
+        arrestBtn.setTitle(LanguageManager.shared.currentLanguage.arrest, for: .normal)
     }
     
     @IBAction func changeToSpanish(_ sender: UIButton) {
-        LanguageManager.shared.state = .spanish
+        LanguageManager.shared.currentLanguage = .spanish
         setSpanishLanguage()
     }
     
