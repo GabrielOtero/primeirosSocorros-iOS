@@ -304,11 +304,19 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-cG-zhW">
-                                                <rect key="frame" x="288" y="943" width="80" height="30"/>
+                                                <rect key="frame" x="293" y="906" width="80" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="ENVIAR"/>
                                                 <connections>
                                                     <segue destination="9WW-rV-1eR" kind="show" id="vh6-ea-7zy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-cJ-aGd">
+                                                <rect key="frame" x="219" y="944" width="229" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" title="IR PARA PROXIMO"/>
+                                                <connections>
+                                                    <segue destination="703-4V-yAM" kind="show" id="gen-02-bq3"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -338,7 +346,10 @@
                     </view>
                     <size key="freeformSize" width="667" height="1000"/>
                     <connections>
+                        <outlet property="goToNextBtn" destination="uxq-cJ-aGd" id="6e5-gu-Fuv"/>
                         <outlet property="q1Label" destination="Vwe-pt-bKZ" id="n1V-Lv-ZuZ"/>
+                        <outlet property="q2Label" destination="OfO-FJ-LPY" id="jsG-Gh-dZS"/>
+                        <outlet property="q3Label" destination="VCm-lb-nKQ" id="jIp-cs-tr1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbK-oO-aiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -461,7 +472,7 @@
         <image name="spain_flag" width="170" height="112"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZcW-7C-cG8"/>
+        <segue reference="gen-02-bq3"/>
         <segue reference="vh6-ea-7zy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,7 +26,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         pageData = []
         
         var i = 1
-        while i <= LanguageManager.shared.injury.size {
+        while i <= LanguageManager.shared.currentInjury.size {
             pageData.append(String(i))
             i = i + 1
         }
@@ -37,7 +37,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
-        if(index == LanguageManager.shared.injury.size - 1 && LanguageManager.shared.injury != Injury.whatIs){
+        if(index == LanguageManager.shared.currentInjury.size - 1 && LanguageManager.shared.currentInjury != Injury.whatIs){
             // Create a new view controller and pass suitable data.
             let nowChooseViewController = storyboard.instantiateViewController(withIdentifier: "NowChooseViewController") as! NowChooseViewController
             nowChooseViewController.dataObject = self.pageData[index]

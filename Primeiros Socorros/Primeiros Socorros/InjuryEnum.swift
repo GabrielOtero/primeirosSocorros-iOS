@@ -7,15 +7,11 @@
 //
 
 import Foundation
+
 enum Injury {
-    case whatIs
-    case trauma
-    case choking
-    case seizure
-    case fainting
-    case arrest
+    case whatIs, trauma, choking, seizure, fainting, arrest
     
-    var current: String {
+    var name: String {
         switch self {
         case .whatIs:
             return "what"
@@ -29,6 +25,23 @@ enum Injury {
             return "fainting"
         case .arrest:
             return "arrest"
+        }
+    }
+    
+    var next: Injury {
+        switch self {
+        case .whatIs:
+            return Injury.trauma
+        case .trauma:
+            return Injury.choking
+        case .choking:
+            return Injury.seizure
+        case .seizure:
+            return Injury.fainting
+        case .fainting:
+            return Injury.arrest
+        case .arrest:
+            return Injury.whatIs
         }
     }
     

@@ -11,5 +11,5 @@ import Foundation
 class LanguageManager {
     static let shared: LanguageManager = LanguageManager()
     var state: Language = .portuguese
-    var injury: Injury = .whatIs
+    var currentInjury: Injury = .whatIs
 }

@@ -90,22 +90,22 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func whatIsClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .whatIs
+        LanguageManager.shared.currentInjury = .whatIs
     }
     @IBAction func traumaClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .trauma
+        LanguageManager.shared.currentInjury = .trauma
     }
     @IBAction func chokingClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .choking
+        LanguageManager.shared.currentInjury = .choking
     }
     @IBAction func seizureClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .seizure
+        LanguageManager.shared.currentInjury = .seizure
     }
     @IBAction func faintClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .fainting
+        LanguageManager.shared.currentInjury = .fainting
     }
     @IBAction func arrestClick(_ sender: UIButton) {
-        LanguageManager.shared.injury = .arrest
+        LanguageManager.shared.currentInjury = .arrest
     }
 }
 
