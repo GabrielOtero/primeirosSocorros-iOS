@@ -341,10 +341,14 @@
                                                 <state key="normal" title="ENVIAR">
                                                     <color key="titleColor" red="0.99203723669052124" green="0.9921455979347229" blue="0.9961208701133728" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="sendClick:" destination="fJF-Tf-XSI" eventType="touchUpInside" id="k43-qm-0fM"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
+                                            <constraint firstItem="i91-cG-zhW" firstAttribute="top" secondItem="pOF-Mw-ynd" secondAttribute="bottom" constant="20" id="1YO-Iq-is3"/>
                                             <constraint firstItem="i91-cG-zhW" firstAttribute="height" secondItem="uxq-cJ-aGd" secondAttribute="height" id="3LS-Ow-L8X"/>
                                             <constraint firstAttribute="trailing" secondItem="pOF-Mw-ynd" secondAttribute="trailing" constant="20" id="9ak-O0-0at"/>
                                             <constraint firstAttribute="height" constant="1000" id="F2D-P1-lbZ"/>
@@ -356,7 +360,6 @@
                                             <constraint firstItem="uxq-cJ-aGd" firstAttribute="top" secondItem="i91-cG-zhW" secondAttribute="bottom" constant="20" id="c5m-RS-o70"/>
                                             <constraint firstItem="i91-cG-zhW" firstAttribute="width" secondItem="uxq-cJ-aGd" secondAttribute="width" id="hh9-ep-3iM"/>
                                             <constraint firstItem="uxq-cJ-aGd" firstAttribute="leading" secondItem="v4n-Zl-N3K" secondAttribute="leading" constant="20" id="kc1-gs-iU3"/>
-                                            <constraint firstItem="i91-cG-zhW" firstAttribute="top" secondItem="pOF-Mw-ynd" secondAttribute="bottom" constant="20" id="og3-ke-Sk2"/>
                                             <constraint firstAttribute="trailing" secondItem="i91-cG-zhW" secondAttribute="trailing" constant="20" id="wIn-vD-FpZ"/>
                                         </constraints>
                                     </view>
@@ -386,6 +389,8 @@
                         <outlet property="q1Label" destination="Vwe-pt-bKZ" id="n1V-Lv-ZuZ"/>
                         <outlet property="q2Label" destination="OfO-FJ-LPY" id="jsG-Gh-dZS"/>
                         <outlet property="q3Label" destination="VCm-lb-nKQ" id="jIp-cs-tr1"/>
+                        <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
+                        <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbK-oO-aiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
