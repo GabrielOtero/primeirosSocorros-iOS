@@ -387,7 +387,15 @@
                         <outlet property="backToMenuBtn" destination="i91-cG-zhW" id="Ej2-Zq-8DC"/>
                         <outlet property="goToNextBtn" destination="uxq-cJ-aGd" id="6e5-gu-Fuv"/>
                         <outlet property="q1Label" destination="Vwe-pt-bKZ" id="n1V-Lv-ZuZ"/>
+                        <outlet property="q1opt1" destination="kOc-xG-iht" id="kRg-3Q-9HN"/>
+                        <outlet property="q1opt2" destination="weE-ur-YKe" id="SGH-ck-O3h"/>
+                        <outlet property="q1opt3" destination="3Pl-qq-gD7" id="AXp-xq-V8W"/>
+                        <outlet property="q1opt4" destination="05S-Ei-Y0g" id="V2c-1J-slb"/>
                         <outlet property="q2Label" destination="OfO-FJ-LPY" id="jsG-Gh-dZS"/>
+                        <outlet property="q2opt1" destination="5LD-Db-CzJ" id="tSg-Cm-HMc"/>
+                        <outlet property="q2opt2" destination="oTn-aN-rH6" id="RMu-aw-IkK"/>
+                        <outlet property="q2opt3" destination="meQ-ou-O2v" id="k1o-6s-0q4"/>
+                        <outlet property="q2opt4" destination="0G6-Mh-o0i" id="W84-bS-9HS"/>
                         <outlet property="q3Label" destination="VCm-lb-nKQ" id="jIp-cs-tr1"/>
                         <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
                         <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>

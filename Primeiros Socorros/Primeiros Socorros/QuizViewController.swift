@@ -18,6 +18,16 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var sendQuizBtn: UIButton!
     @IBOutlet weak var scrollViewContent: UIScrollView!
     
+    @IBOutlet weak var q1opt1: UILabel!
+    @IBOutlet weak var q1opt2: UILabel!
+    @IBOutlet weak var q1opt3: UILabel!
+    @IBOutlet weak var q1opt4: UILabel!
+    
+    @IBOutlet weak var q2opt1: UILabel!
+    @IBOutlet weak var q2opt2: UILabel!
+    @IBOutlet weak var q2opt3: UILabel!
+    @IBOutlet weak var q2opt4: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -32,6 +42,16 @@ class QuizPageViewController: UIViewController {
         q1Label.text = LanguageManager.shared.currentLanguage.q1
         q2Label.text = LanguageManager.shared.currentLanguage.q2
         q3Label.text = LanguageManager.shared.currentLanguage.q3
+        
+        q1opt1.text = LanguageManager.shared.currentLanguage.q1opt1
+        q1opt2.text = LanguageManager.shared.currentLanguage.q1opt2
+        q1opt3.text = LanguageManager.shared.currentLanguage.q1opt3
+        q1opt4.text = LanguageManager.shared.currentLanguage.q1opt4
+        
+        q2opt1.text = LanguageManager.shared.currentLanguage.q2opt1
+        q2opt2.text = LanguageManager.shared.currentLanguage.q2opt2
+        q2opt3.text = LanguageManager.shared.currentLanguage.q2opt3
+        q2opt4.text = LanguageManager.shared.currentLanguage.q2opt4
         
         backToMenuBtn.isHidden = true
         goToNextBtn.isHidden = true

@@ -381,4 +381,420 @@ enum Language {
                 return "No Questions Yet"
             }
         }
+    
+    var q1opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Touching the victim's shoulder without moving her."
+            case .portuguese:
+                return "Tocar no ombro da vítima sem movimentá-la."
+            case .spanish:
+                return "Tocar el hombro de la víctima sin moverla."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "It is a foreign body that prevents the air from getting to the lungs."
+            case .portuguese:
+                return "É um corpo estranho que impede a passagem do ar até chegar no pulmão."
+            case .spanish:
+                return "Es cuando un cuerpo extraño impide el paso del aire hasta el pulmón."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "It is when a person faints with the body tense and presents involuntary movement."
+            case .portuguese:
+                return "É quando uma pessoa desmaia com o corpo tenso e apresenta movimento involuntário."
+            case .spanish:
+                return "Es cuando una persona se desmaya con el cuerpo tenso y presenta movimientos involuntarios."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "It is when a person falls after stumbling on something."
+            case .portuguese:
+                return "É quando a pessoa cai depois de tropeçar em algo."
+            case .spanish:
+                return "Es cuando una persona se cae después de tropezar con algo."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "It is when the person stops breathing and her heart stops beating."
+            case .portuguese:
+                return "É quando a pessoa para de respirar e o coração dela para de bater."
+            case .spanish:
+                return "Es cuando una persona para de respirar y su corazón para de latir."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q1opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Call the person by name, if possible."
+            case .portuguese:
+                return "Chamar a pessoa pelo nome, se possível."
+            case .spanish:
+                return "Llamar a la persona por su nombre, en caso de que sea posible."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "It is a lung disease."
+            case .portuguese:
+                return "É uma doença do pulmão."
+            case .spanish:
+                return "Es una enfermedad del pulmón."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "It is a contagious disease where you cannot get close to the person."
+            case .portuguese:
+                return "É uma doença contagiosa em que não pode se aproximar da pessoa."
+            case .spanish:
+                return "Es una enfermedad contagiosa ante la cual debemos mantener distancia de quien la padece."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "It is the temporary and sudden loss of consciousness."
+            case .portuguese:
+                return "É a perda temporária e repentina da consciência."
+            case .spanish:
+                return "Es la pérdida temporaria y repentina de la consciencia."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "It is only when the person stops breathing."
+            case .portuguese:
+                return "É somente quando a pessoa para de respirar."
+            case .spanish:
+                return "Es únicamente cuando una persona para de respirar."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q1opt3 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Do not move the person."
+            case .portuguese:
+                return "Não movimentar a pessoa."
+            case .spanish:
+                return "No mover a la persona."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "It is when the brain runs out of oxygen."
+            case .portuguese:
+                return "É quando o cérebro fica sem oxigênio."
+            case .spanish:
+                return "Es cuando el cerebro se queda sin oxígeno."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "It is when the person passes out and moves attempting to get up."
+            case .portuguese:
+                return "É quando a pessoa desmaia e apresenta movimentos na tentativa de se levantar."
+            case .spanish:
+                return "Es cuando una persona se desmaya y presenta movimientos como parte del intento de levantarse."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "It is the loss of balance."
+            case .portuguese:
+                return "É a perda do equilíbrio."
+            case .spanish:
+                return "Es la pérdida del equilibrio."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "It is only when the heart stops beating."
+            case .portuguese:
+                return "É somente quando o coração para de bater."
+            case .spanish:
+                return "Es únicamente cuando el corazón para de latir."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q1opt4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Hold the victim’s head."
+            case .portuguese:
+                return "Segurar a cabeça."
+            case .spanish:
+                return "Sostener la cabeza."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "It is a type of fall."
+            case .portuguese:
+                return "É um tipo de queda."
+            case .spanish:
+                return "Es un tipo de caída."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "It is a disease that causes brain damage and leaves the person bedridden"
+            case .portuguese:
+                return "É uma doença que causa problemas no cérebro e deixa a pessoa acamada."
+            case .spanish:
+                return "Es una enfermedad que provoca problemas en el cerebro dejando a la persona en cama."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "It will always happen in people who are going to have a seizure."
+            case .portuguese:
+                return "Sempre vai acontecer nas pessoas que vão começar a convulsionar."
+            case .spanish:
+                return "Siempre sucederá en las personas que van a convulsionar."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "It is when the person needs help to breathe."
+            case .portuguese:
+                return "É quando a pessoa precisa de ajuda para respirar."
+            case .spanish:
+                return "Es cuando una persona necesita ayuda para respirar."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q2opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Car accident."
+            case .portuguese:
+                return "Acidente de carro."
+            case .spanish:
+                return "Accidente de auto."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "In the middle of the personperson's chest."
+            case .portuguese:
+                return "No meio do peito da pessoa."
+            case .spanish:
+                return "En medio del pecho de la persona."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Try to stop the movements."
+            case .portuguese:
+                return "Tentar impedir os movimentos."
+            case .spanish:
+                return "Tratar de impedir los movimientos."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Let the person stand and wait for medical help."
+            case .portuguese:
+                return "Deixar a pessoa de pé e esperar o socorro."
+            case .spanish:
+                return "Mantener a la persona de pie y esperar ayuda"
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Feeling the temperature of the body."
+            case .portuguese:
+                return "Sentindo a temperatura do corpo."
+            case .spanish:
+                return "Sintiendo la temperatura de su cuerpo."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q2opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Choking."
+            case .portuguese:
+                return "Engasgo."
+            case .spanish:
+                return "Atoramiento."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "In the person's belly button."
+            case .portuguese:
+                return "No umbigo da pessoa."
+            case .spanish:
+                return "En el ombligo de la persona."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Open the person's mouth."
+            case .portuguese:
+                return "Abrir a boca da pessoa."
+            case .spanish:
+                return "Abrirle la boca."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Let the person lying down with her head higher than the body until the rescue arrives."
+            case .portuguese:
+                return "Deixar a pessoa deitada com a cabeça mais alta que o corpo até o socorro chegar."
+            case .spanish:
+                return "Mantener a la persona acostada con la cabeza más alta que el cuerpo hasta que la ayuda llegue."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Seeing the person desperate to breathe, moving to all sides."
+            case .portuguese:
+                return "Vendo a pessoa desesperada para respirar, movimentando-se para todos os lados."
+            case .spanish:
+                return "Vemos a la persona desesperada por respirar, moviéndose inquieta."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q2opt3 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Falling of high places."
+            case .portuguese:
+                return "Queda de lugares altos."
+            case .spanish:
+                return "Caídas desde lugares altos."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Above the person's belly button."
+            case .portuguese:
+                return "Acima do umbigo da pessoa."
+            case .spanish:
+                return "Encima del ombligo de la persona."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Call the Emergency Medical Service."
+            case .portuguese:
+                return "Ligar para o SAMU."
+            case .spanish:
+                return "Llamar al SAMU."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Leave the person alone and call for help."
+            case .portuguese:
+                return "Deixar a pessoa sozinha e chamar o socorro."
+            case .spanish:
+                return "Dejar sola a la persona y pedir ayuda."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Seeing the chest not moving, by not hearing breathing noises or by not feeling the air coming out when approaching your hand near to the person's nose."
+            case .portuguese:
+                return "Vendo o tórax não se mexer, não ouvir o barulho da respiração ou não sentir a saída de ar na pele ao aproximar a mão perto do nariz da pessoa."
+            case .spanish:
+                return "No vemos movimiento del tórax, no oímos el ruido de la respiración ni sentimos la salida de aire en nuestra piel si acercamos nuestra mano cerca de la nariz de la persona."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q2opt4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "Crushing."
+            case .portuguese:
+                return "Esmagamento."
+            case .spanish:
+                return "Aplastamiento"
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Below the person's belly button."
+            case .portuguese:
+                return "Abaixo do umbigo da pessoa."
+            case .spanish:
+                return "Abajo del ombligo de la persona."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Give water or medicine to the person."
+            case .portuguese:
+                return "Dar água ou remédio para a pessoa."
+            case .spanish:
+                return "Darle agua o remedios."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Let the person lying down with the head lower than the body until the rescue arrives."
+            case .portuguese:
+                return "Deixar a pessoa deitada com a cabeça mais baixa que o corpo até o socorro chegar."
+            case .spanish:
+                return "Mantener a la persona acostada con la cabeza más baja que el cuerpo hasta que la ayuda llegue."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Hearing the person calling for help, saying that she cannot breathe."
+            case .portuguese:
+                return "Ouvindo a pessoa chamar socorro, dizendo que não consegue respirar."
+            case .spanish:
+                return "Escuchando a la persona pedir ayuda, diciendo que no puede respirar."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
 }
