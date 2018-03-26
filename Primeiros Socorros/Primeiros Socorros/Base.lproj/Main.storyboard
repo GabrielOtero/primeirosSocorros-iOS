@@ -397,6 +397,10 @@
                         <outlet property="q2opt3" destination="meQ-ou-O2v" id="k1o-6s-0q4"/>
                         <outlet property="q2opt4" destination="0G6-Mh-o0i" id="W84-bS-9HS"/>
                         <outlet property="q3Label" destination="VCm-lb-nKQ" id="jIp-cs-tr1"/>
+                        <outlet property="q3opt1" destination="j1k-7K-de1" id="UBf-n0-sRL"/>
+                        <outlet property="q3opt2" destination="m39-Xk-3Av" id="AjH-qq-DWb"/>
+                        <outlet property="q3opt3" destination="ek7-14-3sp" id="CGQ-AN-1md"/>
+                        <outlet property="q3opt4" destination="sEA-PE-EhD" id="SzK-JH-B3l"/>
                         <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
                         <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>
                     </connections>

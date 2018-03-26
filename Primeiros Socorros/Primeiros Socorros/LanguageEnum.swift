@@ -850,5 +850,162 @@ enum Language {
         }
     }
     
-    //TODO q3opt2
+    var q3opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "It is an airborne disease."
+            case .portuguese:
+                return "É uma doença transmitida pelo ar."
+            case .spanish:
+                return "Es una enfermedad transmitida por el aire."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Put the baby up."
+            case .portuguese:
+                return "Colocar o bebê para cima."
+            case .spanish:
+                return "Levantar el bebé."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Open the person's mouth."
+            case .portuguese:
+                return "Abrir a boca da pessoa."
+            case .spanish:
+                return "Abrirle la boca."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Stand beside the person until the help arrives."
+            case .portuguese:
+                return "Ficar ao lado da pessoa até o socorro chegar."
+            case .spanish:
+                return "Permanecer al lado de la persona hasta que la ayuda llegue."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Stand by the person until the help arrives."
+            case .portuguese:
+                return "Ficar do lado da pessoa até o socorro chegar."
+            case .spanish:
+                return "Permanecer al lado de la persona hasta que la ayuda llegue."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    //TODO q3opt3
+    var q3opt3: String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "It is a cardiovascular disease."
+            case .portuguese:
+                return "É uma doença do coração."
+            case .spanish:
+                return "Es una enfermedad del corazón."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Make 5 chest compressions."
+            case .portuguese:
+                return "Fazer 5 compressões torácicas."
+            case .spanish:
+                return "Hacer 5 compresiones torácicas."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Call the Emergency Medical Service."
+            case .portuguese:
+                return "Ligar para o SAMU."
+            case .spanish:
+                return "Llamar al SAMU."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Call for help and provide room for the person to breathe."
+            case .portuguese:
+                return "Chamar Socorro e proporcionar espaço para a pessoa respirar."
+            case .spanish:
+                return "Pedir ayuda y darle espacio a la persona para que respire."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Scream desperately for help."
+            case .portuguese:
+                return "Gritar desesperadamente por socorro."
+            case .spanish:
+                return "Pedir ayuda a gritos desesperadamente."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    //TODO q3opt4
+    var q3opt4: String {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            switch self{
+            case .english:
+                return "It is an injury caused by a blow or impact."
+            case .portuguese:
+                return "É uma lesão causada por um golpe ou impacto."
+            case .spanish:
+                return "Es una lesión causada por un golpe o impacto."
+            }
+        case .choking:
+            switch self{
+            case .english:
+                return "Put the baby down."
+            case .portuguese:
+                return "Colocar o bebê para baixo."
+            case .spanish:
+                return "Colocar el bebé para abajo."
+            }
+        case .seizure:
+            switch self{
+            case .english:
+                return "Loosen victim’s clothes and wait for the movements to stop."
+            case .portuguese:
+                return "Afrouxar roupas e esperar que os movimentos parem."
+            case .spanish:
+                return "Aflojar las ropas y esperar a que los movimientos paren."
+            }
+        case .fainting:
+            switch self{
+            case .english:
+                return "Let the person lying down with the head lower than the body until the rescue arrives."
+            case .portuguese:
+                return "Deixar a pessoa deitada com a cabeça mais baixa que o corpo até o socorro chegar."
+            case .spanish:
+                return "Mantener a la persona acostada con la cabeza más baja que el cuerpo hasta que la ayuda llegue."
+            }
+        case .arrest:
+            switch self{
+            case .english:
+                return "Stay on the person's side until someone start compressions."
+            case .portuguese:
+                return "Ficar do lado da pessoa até começarem as compressões."
+            case .spanish:
+                return "Permanecer al lado de la persona hasta que comiencen las compresiones."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
 }

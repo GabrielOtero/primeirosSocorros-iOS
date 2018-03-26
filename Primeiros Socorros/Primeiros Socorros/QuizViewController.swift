@@ -28,6 +28,12 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q2opt3: UILabel!
     @IBOutlet weak var q2opt4: UILabel!
     
+    @IBOutlet weak var q3opt1: UILabel!
+    @IBOutlet weak var q3opt2: UILabel!
+    @IBOutlet weak var q3opt3: UILabel!
+    @IBOutlet weak var q3opt4: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -52,6 +58,11 @@ class QuizPageViewController: UIViewController {
         q2opt2.text = LanguageManager.shared.currentLanguage.q2opt2
         q2opt3.text = LanguageManager.shared.currentLanguage.q2opt3
         q2opt4.text = LanguageManager.shared.currentLanguage.q2opt4
+        
+        q3opt1.text = LanguageManager.shared.currentLanguage.q3opt1
+        q3opt2.text = LanguageManager.shared.currentLanguage.q3opt2
+        q3opt3.text = LanguageManager.shared.currentLanguage.q3opt3
+        q3opt4.text = LanguageManager.shared.currentLanguage.q3opt4
         
         backToMenuBtn.isHidden = true
         goToNextBtn.isHidden = true
