@@ -68,20 +68,23 @@ class QuizPageViewController: UIViewController {
         goToNextBtn.isHidden = true
         
         backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
+        sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
+        goToNextBtn.setTitle(LanguageManager.shared.currentLanguage.goToButton , for: .normal)
         
-        if(LanguageManager.shared.currentInjury != Injury.arrest){
-            goToNextBtn.setTitle(LanguageManager.shared.currentLanguage.goToButton , for: .normal)
-            LanguageManager.shared.currentInjury = LanguageManager.shared.currentInjury.next
-        }
     }
     
     @IBAction func sendClick(_ sender: UIButton) {
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             DispatchQueue.main.async {  // UI updates on the main thread
+                if(LanguageManager.shared.currentInjury != Injury.arrest){
+                    self.goToNextBtn.isHidden = false
+                }
+                
                 self.backToMenuBtn.isHidden = false
-                self.goToNextBtn.isHidden = false
                 let desiredOffset = CGPoint(x: 0, y: 0)
                 self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
+                
+                LanguageManager.shared.currentInjury = LanguageManager.shared.currentInjury.next
             }
     })
     }

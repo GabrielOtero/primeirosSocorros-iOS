@@ -46,6 +46,17 @@ enum Language {
         }
     }
     
+    var send: String{
+        switch self {
+        case .english:
+            return "Send!"
+        case .portuguese:
+            return "Enviar!"
+        case .spanish:
+            return "Enviar!"
+        }
+    }
+    
     var backToMenu: String{
         switch self {
         case .english:
@@ -954,8 +965,7 @@ enum Language {
             return "No Questions Yet"
         }
     }
-    
-    //TODO q3opt4
+
     var q3opt4: String {
         switch LanguageManager.shared.currentInjury {
         case .trauma:
@@ -1007,5 +1017,58 @@ enum Language {
             return "No Questions Yet"
         }
     }
+    
+    var q1CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+            case .trauma:
+                return 3
+            case .choking:
+                return 1
+            case .seizure:
+                return 1
+            case .fainting:
+                return 2
+            case .arrest:
+                return 1
+            default:
+                return 0
+        }
+    }
+    
+    var q2CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            return 2
+        case .choking:
+            return 3
+        case .seizure:
+            return 3
+        case .fainting:
+            return 4
+        case .arrest:
+            return 3
+        default:
+            return 0
+        }
+    }
+    
+    var q3CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+        case .trauma:
+            return 4
+        case .choking:
+            return 2
+        case .seizure:
+            return 2
+        case .fainting:
+            return 1
+        case .arrest:
+            return 2
+        default:
+            return 0
+        }
+    }
+    
+    
     
 }
