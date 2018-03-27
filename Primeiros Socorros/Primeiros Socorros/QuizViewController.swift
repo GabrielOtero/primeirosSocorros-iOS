@@ -45,9 +45,17 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q2opt4radio: DLRadioButton!
     
     
+    @IBOutlet weak var q3opt1radio: DLRadioButton!
+    @IBOutlet weak var q3opt2radio: DLRadioButton!
+    @IBOutlet weak var q3opt3radio: DLRadioButton!
+    @IBOutlet weak var q3opt4radio: DLRadioButton!
+    
     @IBOutlet weak var q1Feedback: UILabel!
     @IBOutlet weak var q2feedback: UILabel!
+    @IBOutlet weak var q3feedback: UILabel!
     
+    let greenColor = UIColor.green
+    let redColor = UIColor.red
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,6 +93,7 @@ class QuizPageViewController: UIViewController {
         
         self.q1Feedback.isHidden = true
         self.q2feedback.isHidden = true
+        self.q3feedback.isHidden = true
         
         backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
         sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
@@ -95,58 +104,192 @@ class QuizPageViewController: UIViewController {
     fileprivate func handleQ1() {
         // UI updates on the main thread
         
+        self.q1opt1radio.isHidden = true
+        self.q1opt2radio.isHidden = true
+        self.q1opt3radio.isHidden = true
+        self.q1opt4radio.isHidden = true
+        
+        self.q1opt1.isHidden = true
+        self.q1opt2.isHidden = true
+        self.q1opt3.isHidden = true
+        self.q1opt4.isHidden = true
+        
         var q1SelectedOpt = 0
         
         if(self.q1opt1radio.isSelected){
             q1SelectedOpt = 1
+            self.q1opt1.isHidden = false
+            self.q1opt1.textColor = redColor
         }
         if(self.q1opt2radio.isSelected){
             q1SelectedOpt = 2
+            self.q1opt2.isHidden = false
+            self.q1opt2.textColor = redColor
         }
         if(self.q1opt3radio.isSelected){
             q1SelectedOpt = 3
+            self.q1opt3.isHidden = false
+            self.q1opt3.textColor = redColor
         }
         if(self.q1opt4radio.isSelected){
             q1SelectedOpt = 4
+            self.q1opt4.isHidden = false
+            self.q1opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q1CorrectAnswer == 1){
+            self.q1opt1.isHidden = false
+            self.q1opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q1CorrectAnswer == 2){
+            self.q1opt2.isHidden = false
+            self.q1opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q1CorrectAnswer == 3){
+            self.q1opt3.isHidden = false
+            self.q1opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q1CorrectAnswer == 4){
+            self.q1opt4.isHidden = false
+            self.q1opt4.textColor = greenColor
         }
         
         self.q1Feedback.isHidden = false
         self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q1SelectedOpt == LanguageManager.shared.currentLanguage.q1CorrectAnswer){
             self.q1Feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
-            self.q1Feedback.textColor =  UIColor.green
+            self.q1Feedback.textColor = greenColor
         }else{
             self.q1Feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
-            self.q1Feedback.textColor =  UIColor.red
+            self.q1Feedback.textColor = redColor
         }
     }
     
     fileprivate func handleQ2() {
         // UI updates on the main thread
         
+        self.q2opt1radio.isHidden = true
+        self.q2opt2radio.isHidden = true
+        self.q2opt3radio.isHidden = true
+        self.q2opt4radio.isHidden = true
+        
+        self.q2opt1.isHidden = true
+        self.q2opt2.isHidden = true
+        self.q2opt3.isHidden = true
+        self.q2opt4.isHidden = true
+        
         var q2SelectedOpt = 0
         
         if(self.q2opt1radio.isSelected){
             q2SelectedOpt = 1
+            self.q2opt1.isHidden = false
+            self.q2opt1.textColor = redColor
         }
         if(self.q2opt2radio.isSelected){
             q2SelectedOpt = 2
+            self.q2opt2.isHidden = false
+            self.q2opt2.textColor = redColor
         }
         if(self.q2opt3radio.isSelected){
             q2SelectedOpt = 3
+            self.q2opt3.isHidden = false
+            self.q2opt3.textColor = redColor
         }
         if(self.q2opt4radio.isSelected){
             q2SelectedOpt = 4
+            self.q2opt4.isHidden = false
+            self.q2opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q2CorrectAnswer == 1){
+            self.q2opt1.isHidden = false
+            self.q2opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q2CorrectAnswer == 2){
+            self.q2opt2.isHidden = false
+            self.q2opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q2CorrectAnswer == 3){
+            self.q2opt3.isHidden = false
+            self.q2opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q2CorrectAnswer == 4){
+            self.q2opt4.isHidden = false
+            self.q2opt4.textColor = greenColor
         }
         
         self.q2feedback.isHidden = false
         self.q2feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q2SelectedOpt == LanguageManager.shared.currentLanguage.q2CorrectAnswer){
             self.q2feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
-            self.q2feedback.textColor =  UIColor.green
+            self.q2feedback.textColor = greenColor
         }else{
             self.q2feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
-            self.q2feedback.textColor =  UIColor.red
+            self.q2feedback.textColor = redColor
+        }
+    }
+    
+    fileprivate func handleQ3() {
+        // UI updates on the main thread
+        
+        self.q3opt1radio.isHidden = true
+        self.q3opt2radio.isHidden = true
+        self.q3opt3radio.isHidden = true
+        self.q3opt4radio.isHidden = true
+        
+        self.q3opt1.isHidden = true
+        self.q3opt2.isHidden = true
+        self.q3opt3.isHidden = true
+        self.q3opt4.isHidden = true
+        
+        var q3SelectedOpt = 0
+        
+        if(self.q3opt1radio.isSelected){
+            q3SelectedOpt = 1
+            self.q3opt1.isHidden = false
+            self.q3opt1.textColor = redColor
+        }
+        if(self.q3opt2radio.isSelected){
+            q3SelectedOpt = 2
+            self.q3opt2.isHidden = false
+            self.q3opt2.textColor = redColor
+        }
+        if(self.q3opt3radio.isSelected){
+            q3SelectedOpt = 3
+            self.q3opt3.isHidden = false
+            self.q3opt3.textColor = redColor
+        }
+        if(self.q3opt4radio.isSelected){
+            q3SelectedOpt = 4
+            self.q3opt4.isHidden = false
+            self.q3opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q3CorrectAnswer == 1){
+            self.q3opt1.isHidden = false
+            self.q3opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q3CorrectAnswer == 2){
+            self.q3opt2.isHidden = false
+            self.q3opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q3CorrectAnswer == 3){
+            self.q3opt3.isHidden = false
+            self.q3opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q3CorrectAnswer == 4){
+            self.q3opt4.isHidden = false
+            self.q3opt4.textColor = greenColor
+        }
+        
+        self.q3feedback.isHidden = false
+        self.q3feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
+        if(q3SelectedOpt == LanguageManager.shared.currentLanguage.q3CorrectAnswer){
+            self.q3feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+            self.q3feedback.textColor = greenColor
+        }else{
+            self.q3feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+            self.q3feedback.textColor = redColor
         }
     }
     
@@ -155,14 +298,14 @@ class QuizPageViewController: UIViewController {
             DispatchQueue.main.async {
                 self.handleQ1()
                 self.handleQ2()
-                
+                self.handleQ3()
                 
                 if(LanguageManager.shared.currentInjury != Injury.arrest){
                     self.goToNextBtn.isHidden = false
                 }
                 self.sendQuizBtn.isHidden = true
                 self.backToMenuBtn.isHidden = false
-                let desiredOffset = CGPoint(x: 0, y: 0)
+                let desiredOffset = CGPoint(x: 0, y: 1)
                 self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
                 
                 LanguageManager.shared.currentInjury = LanguageManager.shared.currentInjury.next

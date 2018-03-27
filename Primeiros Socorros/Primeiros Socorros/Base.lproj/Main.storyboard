@@ -199,10 +199,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="1000"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Zl-N3K">
-                                        <rect key="frame" x="0.0" y="0.0" width="667" height="1063"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="1159"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="a2T-q2-Qyd">
-                                                <rect key="frame" x="20" y="20" width="667" height="1023"/>
+                                                <rect key="frame" x="20" y="20" width="667" height="1119"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iZQ-Ow-MtQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="667" height="271"/>
@@ -228,7 +228,7 @@
                                                                 <rect key="frame" x="0.0" y="31" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="q1opt1radio" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-xG-nmm" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="896.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -248,7 +248,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-xG-iht">
-                                                                        <rect key="frame" x="-20" y="0.0" width="0.0" height="54"/>
+                                                                        <rect key="frame" x="876.5" y="0.0" width="222.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -259,7 +259,7 @@
                                                                 <rect key="frame" x="0.0" y="93" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-Dt-JfQ" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="184.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -274,7 +274,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weE-ur-YKe">
-                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <rect key="frame" x="164.5" y="0.0" width="482.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -285,7 +285,7 @@
                                                                 <rect key="frame" x="0.0" y="155" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNh-rT-OgO" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="146.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -300,7 +300,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pl-qq-gD7">
-                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <rect key="frame" x="126.5" y="0.0" width="520.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -359,7 +359,7 @@
                                                                 <rect key="frame" x="0.0" y="33" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-p7-EbQ" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -379,7 +379,7 @@
                                                                         </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LD-Db-CzJ">
-                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -390,7 +390,7 @@
                                                                 <rect key="frame" x="0.0" y="97" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-p8-QJh" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -405,7 +405,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-aN-rH6">
-                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -416,7 +416,7 @@
                                                                 <rect key="frame" x="0.0" y="161" width="667" height="54"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JU-AW-gTK" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -431,7 +431,7 @@
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-ou-O2v">
-                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -467,42 +467,138 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ku-nl-VTI">
-                                                        <rect key="frame" x="0.0" y="610" width="667" height="183"/>
+                                                        <rect key="frame" x="0.0" y="610" width="667" height="279"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-lb-nKQ">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwN-gA-XGl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="667" height="23"/>
-                                                                <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
-                                                                <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-7K-de1">
-                                                                <rect key="frame" x="0.0" y="33" width="667" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
-                                                                <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-PE-EhD">
-                                                                <rect key="frame" x="0.0" y="73" width="667" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
-                                                                <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-14-3sp">
-                                                                <rect key="frame" x="0.0" y="113" width="667" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
-                                                                <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m39-Xk-3Av">
-                                                                <rect key="frame" x="0.0" y="153" width="667" height="30"/>
-                                                                <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
-                                                                <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-lb-nKQ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                                                        <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correcto!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaG-4e-hCk">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                                                        <color key="textColor" red="0.25098039220000001" green="0.85490196080000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="R4R-SW-iV0">
+                                                                <rect key="frame" x="0.0" y="33" width="667" height="54"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSv-eo-IbY" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outletCollection property="otherButtons" destination="Mkf-cn-c2k" id="Bjy-vg-QUF"/>
+                                                                            <outletCollection property="otherButtons" destination="QuK-WF-zFh" id="UHY-qO-Rt0"/>
+                                                                            <outletCollection property="otherButtons" destination="W66-qE-oub" id="c7y-As-pcC"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-7K-de1">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
+                                                                        <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="loe-o2-J51">
+                                                                <rect key="frame" x="0.0" y="97" width="667" height="54"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-cn-c2k" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m39-Xk-3Av">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
+                                                                        <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HDb-2h-Y7C">
+                                                                <rect key="frame" x="0.0" y="161" width="667" height="54"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuK-WF-zFh" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-14-3sp">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
+                                                                        <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="otC-iZ-xP9">
+                                                                <rect key="frame" x="0.0" y="225" width="667" height="54"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W66-qE-oub" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="iconColor">
+                                                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="iconSize">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </button>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-PE-EhD">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
+                                                                        <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
+                                                                        <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="97h-og-hbP">
-                                                        <rect key="frame" x="0.0" y="823" width="667" height="200"/>
+                                                        <rect key="frame" x="0.0" y="919" width="667" height="200"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-Mw-ynd">
                                                                 <rect key="frame" x="0.0" y="0.0" width="667" height="60"/>
@@ -601,10 +697,15 @@
                         <outlet property="q2opt4" destination="0G6-Mh-o0i" id="W84-bS-9HS"/>
                         <outlet property="q2opt4radio" destination="99R-Ox-GI5" id="v4I-or-Coq"/>
                         <outlet property="q3Label" destination="VCm-lb-nKQ" id="jIp-cs-tr1"/>
+                        <outlet property="q3feedback" destination="jaG-4e-hCk" id="vXP-bB-3Sm"/>
                         <outlet property="q3opt1" destination="j1k-7K-de1" id="UBf-n0-sRL"/>
+                        <outlet property="q3opt1radio" destination="cSv-eo-IbY" id="mpR-88-8tu"/>
                         <outlet property="q3opt2" destination="m39-Xk-3Av" id="AjH-qq-DWb"/>
+                        <outlet property="q3opt2radio" destination="Mkf-cn-c2k" id="LLW-nI-tn3"/>
                         <outlet property="q3opt3" destination="ek7-14-3sp" id="CGQ-AN-1md"/>
+                        <outlet property="q3opt3radio" destination="QuK-WF-zFh" id="91L-1V-nvG"/>
                         <outlet property="q3opt4" destination="sEA-PE-EhD" id="SzK-JH-B3l"/>
+                        <outlet property="q3opt4radio" destination="W66-qE-oub" id="J67-bf-u00"/>
                         <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
                         <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>
                     </connections>
