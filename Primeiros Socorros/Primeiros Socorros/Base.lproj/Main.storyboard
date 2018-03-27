@@ -191,43 +191,43 @@
         <scene sceneID="C2A-H7-Rcp">
             <objects>
                 <viewController storyboardIdentifier="QuizViewController" id="fJF-Tf-XSI" customClass="QuizPageViewController" customModule="Primeiros_Socorros" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="U4Q-Ug-6Lc">
+                    <view key="view" contentMode="scaleToFill" id="U4Q-Ug-6Lc">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-Ua-LrT">
-                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="1000"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tUk-Ua-LrT">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="1000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Zl-N3K">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="1063"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v4n-Zl-N3K">
+                                        <rect key="frame" x="0.0" y="0.0" width="667" height="1063"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="a2T-q2-Qyd">
-                                                <rect key="frame" x="20" y="20" width="1008" height="1023"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="a2T-q2-Qyd">
+                                                <rect key="frame" x="20" y="20" width="667" height="1023"/>
                                                 <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iZQ-Ow-MtQ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="1008" height="271"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iZQ-Ow-MtQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="271"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-OY-iGv">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1008" height="23"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="X0m-OY-iGv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="667" height="23"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwe-pt-bKZ">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="469.5" height="23"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vwe-pt-bKZ">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="23"/>
                                                                         <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Correcto!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-Cv-bQZ">
-                                                                        <rect key="frame" x="367.5" y="0.0" width="470" height="23"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correcto!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFM-Cv-bQZ">
+                                                                        <rect key="frame" x="-20" y="0.0" width="0.0" height="23"/>
                                                                         <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                                         <color key="textColor" red="0.25098039220000001" green="0.85490196080000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-Ex-KVG">
-                                                                <rect key="frame" x="0.0" y="31" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HXt-Ex-KVG">
+                                                                <rect key="frame" x="0.0" y="31" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" restorationIdentifier="q1opt1radio" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-xG-nmm" customClass="DLRadioButton">
+                                                                    <button opaque="NO" contentMode="scaleToFill" restorationIdentifier="q1opt1radio" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-xG-nmm" customClass="DLRadioButton">
                                                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
@@ -247,19 +247,19 @@
                                                                             <outletCollection property="otherButtons" destination="CRT-Qg-VM7" id="bfo-yK-OFZ"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-xG-iht">
-                                                                        <rect key="frame" x="-190.5" y="0.0" width="0.0" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOc-xG-iht">
+                                                                        <rect key="frame" x="-20" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P2S-Ni-C2N">
-                                                                <rect key="frame" x="0.0" y="93" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="P2S-Ni-C2N">
+                                                                <rect key="frame" x="0.0" y="93" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-Dt-JfQ" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="292" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3J-Dt-JfQ" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -273,19 +273,19 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weE-ur-YKe">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weE-ur-YKe">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pg1-rc-GUU">
-                                                                <rect key="frame" x="0.0" y="155" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pg1-rc-GUU">
+                                                                <rect key="frame" x="0.0" y="155" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNh-rT-OgO" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="197" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNh-rT-OgO" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -299,19 +299,19 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pl-qq-gD7">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Pl-qq-gD7">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-dy-44t">
-                                                                <rect key="frame" x="0.0" y="217" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="I9e-dy-44t">
+                                                                <rect key="frame" x="0.0" y="217" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRT-Qg-VM7" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRT-Qg-VM7" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -325,8 +325,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05S-Ei-Y0g">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="973" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05S-Ei-Y0g">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -335,25 +335,31 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zfF-Kp-jvy">
-                                                        <rect key="frame" x="0.0" y="301" width="1008" height="279"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zfF-Kp-jvy">
+                                                        <rect key="frame" x="0.0" y="301" width="667" height="279"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cah-cp-p6b">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1008" height="23"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cah-cp-p6b">
+                                                                <rect key="frame" x="0.0" y="0.0" width="667" height="23"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfO-FJ-LPY">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="1008" height="23"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OfO-FJ-LPY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="23"/>
                                                                         <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correcto!" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5b-u7-MDd">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="23"/>
+                                                                        <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
+                                                                        <color key="textColor" red="0.25098039220000001" green="0.85490196080000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Afo-eR-agU">
-                                                                <rect key="frame" x="0.0" y="33" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Afo-eR-agU">
+                                                                <rect key="frame" x="0.0" y="33" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-p7-EbQ" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfI-p7-EbQ" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -372,19 +378,19 @@
                                                                             <outletCollection property="otherButtons" destination="99R-Ox-GI5" id="s72-Ub-xe8"/>
                                                                         </connections>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LD-Db-CzJ">
-                                                                        <rect key="frame" x="-160.5" y="0.0" width="973" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LD-Db-CzJ">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m0X-ym-lpj">
-                                                                <rect key="frame" x="0.0" y="97" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="m0X-ym-lpj">
+                                                                <rect key="frame" x="0.0" y="97" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-p8-QJh" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmO-p8-QJh" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -398,19 +404,19 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-aN-rH6">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="974" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTn-aN-rH6">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t1e-PK-Cof">
-                                                                <rect key="frame" x="0.0" y="161" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t1e-PK-Cof">
+                                                                <rect key="frame" x="0.0" y="161" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JU-AW-gTK" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JU-AW-gTK" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -424,19 +430,19 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-ou-O2v">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="973" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meQ-ou-O2v">
+                                                                        <rect key="frame" x="313.5" y="0.0" width="333.5" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
                                                                 </subviews>
                                                             </stackView>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-lV-I6t">
-                                                                <rect key="frame" x="0.0" y="225" width="1008" height="54"/>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="QbC-lV-I6t">
+                                                                <rect key="frame" x="0.0" y="225" width="667" height="54"/>
                                                                 <subviews>
-                                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99R-Ox-GI5" customClass="DLRadioButton">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="54"/>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="99R-Ox-GI5" customClass="DLRadioButton">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="667" height="54"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                                                         <userDefinedRuntimeAttributes>
                                                                             <userDefinedRuntimeAttribute type="color" keyPath="indicatorColor">
@@ -450,8 +456,8 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                         </userDefinedRuntimeAttributes>
                                                                     </button>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-Mh-o0i">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="973" height="54"/>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0G6-Mh-o0i">
+                                                                        <rect key="frame" x="647" y="0.0" width="0.0" height="54"/>
                                                                         <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                         <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -460,46 +466,46 @@
                                                             </stackView>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ku-nl-VTI">
-                                                        <rect key="frame" x="0.0" y="610" width="1008" height="183"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9Ku-nl-VTI">
+                                                        <rect key="frame" x="0.0" y="610" width="667" height="183"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-lb-nKQ">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1008" height="23"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCm-lb-nKQ">
+                                                                <rect key="frame" x="0.0" y="0.0" width="667" height="23"/>
                                                                 <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-7K-de1">
-                                                                <rect key="frame" x="0.0" y="33" width="1008" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1k-7K-de1">
+                                                                <rect key="frame" x="0.0" y="33" width="667" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-PE-EhD">
-                                                                <rect key="frame" x="0.0" y="73" width="1008" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sEA-PE-EhD">
+                                                                <rect key="frame" x="0.0" y="73" width="667" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-14-3sp">
-                                                                <rect key="frame" x="0.0" y="113" width="1008" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-14-3sp">
+                                                                <rect key="frame" x="0.0" y="113" width="667" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m39-Xk-3Av">
-                                                                <rect key="frame" x="0.0" y="153" width="1008" height="30"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sdfsadf fafdsfdsdfs fds" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m39-Xk-3Av">
+                                                                <rect key="frame" x="0.0" y="153" width="667" height="30"/>
                                                                 <fontDescription key="fontDescription" name="Humanist521BT-Light" family="Humanist 521" pointSize="25"/>
                                                                 <color key="textColor" red="0.44705882349999998" green="0.3921568627" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
                                                     </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="97h-og-hbP">
-                                                        <rect key="frame" x="0.0" y="823" width="1008" height="200"/>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="97h-og-hbP">
+                                                        <rect key="frame" x="0.0" y="823" width="667" height="200"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-Mw-ynd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="1008" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOF-Mw-ynd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="667" height="60"/>
                                                                 <color key="backgroundColor" red="0.25098039220000001" green="0.85490196080000003" blue="0.41960784309999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="HKI-o7-nsc"/>
@@ -512,8 +518,8 @@
                                                                     <action selector="sendClick:" destination="fJF-Tf-XSI" eventType="touchUpInside" id="k43-qm-0fM"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-cG-zhW">
-                                                                <rect key="frame" x="0.0" y="70" width="1008" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i91-cG-zhW">
+                                                                <rect key="frame" x="0.0" y="70" width="667" height="60"/>
                                                                 <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name="SFSlapstickComic" family="SF Slapstick Comic" pointSize="30"/>
                                                                 <state key="normal" title="VOLTA PARA O MENU">
@@ -523,8 +529,8 @@
                                                                     <segue destination="9WW-rV-1eR" kind="show" id="vh6-ea-7zy"/>
                                                                 </connections>
                                                             </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-cJ-aGd">
-                                                                <rect key="frame" x="0.0" y="140" width="1008" height="60"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxq-cJ-aGd">
+                                                                <rect key="frame" x="0.0" y="140" width="667" height="60"/>
                                                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="60" id="4ro-sg-ERy"/>
@@ -585,6 +591,7 @@
                         <outlet property="q1opt4" destination="05S-Ei-Y0g" id="V2c-1J-slb"/>
                         <outlet property="q1opt4radio" destination="CRT-Qg-VM7" id="Jed-8d-AYW"/>
                         <outlet property="q2Label" destination="OfO-FJ-LPY" id="jsG-Gh-dZS"/>
+                        <outlet property="q2feedback" destination="y5b-u7-MDd" id="b25-io-BDO"/>
                         <outlet property="q2opt1" destination="5LD-Db-CzJ" id="tSg-Cm-HMc"/>
                         <outlet property="q2opt1radio" destination="EfI-p7-EbQ" id="b1d-HH-BfO"/>
                         <outlet property="q2opt2" destination="oTn-aN-rH6" id="RMu-aw-IkK"/>

@@ -46,6 +46,7 @@ class QuizPageViewController: UIViewController {
     
     
     @IBOutlet weak var q1Feedback: UILabel!
+    @IBOutlet weak var q2feedback: UILabel!
     
     
     override func viewDidLoad() {
@@ -83,6 +84,7 @@ class QuizPageViewController: UIViewController {
         goToNextBtn.isHidden = true
         
         self.q1Feedback.isHidden = true
+        self.q2feedback.isHidden = true
         
         backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
         sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
@@ -109,7 +111,7 @@ class QuizPageViewController: UIViewController {
         }
         
         self.q1Feedback.isHidden = false
-        self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -10)
+        self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q1SelectedOpt == LanguageManager.shared.currentLanguage.q1CorrectAnswer){
             self.q1Feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
             self.q1Feedback.textColor =  UIColor.green
@@ -137,14 +139,14 @@ class QuizPageViewController: UIViewController {
             q2SelectedOpt = 4
         }
         
-        self.q1Feedback.isHidden = false
-        self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -10)
+        self.q2feedback.isHidden = false
+        self.q2feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q2SelectedOpt == LanguageManager.shared.currentLanguage.q2CorrectAnswer){
-            self.q1Feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
-            self.q1Feedback.textColor =  UIColor.green
+            self.q2feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+            self.q2feedback.textColor =  UIColor.green
         }else{
-            self.q1Feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
-            self.q1Feedback.textColor =  UIColor.red
+            self.q2feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+            self.q2feedback.textColor =  UIColor.red
         }
     }
     
