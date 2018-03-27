@@ -7,7 +7,7 @@ target 'Primeiros Socorros' do
 
   # Pods for Primeiros Socorros
 
-  pod 'M13Checkbox'
+  pod 'DLRadioButton', '~> 1.4'
 
   target 'Primeiros SocorrosTests' do
     inherit! :search_paths

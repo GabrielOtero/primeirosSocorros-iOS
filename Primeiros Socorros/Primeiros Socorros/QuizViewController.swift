@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import M13Checkbox
+import DLRadioButton
 
 class QuizPageViewController: UIViewController {
     
@@ -34,18 +34,14 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q3opt3: UILabel!
     @IBOutlet weak var q3opt4: UILabel!
     
-//    @IBOutlet weak var q1opt1CheckBoxView: UIView!
-    
+    @IBOutlet weak var q1opt1radio: DLRadioButton!
+    @IBOutlet weak var q1opt2radio: DLRadioButton!
+    @IBOutlet weak var q1opt3radio: DLRadioButton!
+    @IBOutlet weak var q1opt4radio: DLRadioButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        let checkbox = M13Checkbox(frame: CGRect(x: 0.0, y: 0.0, width: 20.0, height: 20.0))
-//        checkbox.stateChangeAnimation = M13Checkbox.Animation.fill
-//
-//        q1opt1CheckBoxView.addSubview(checkbox)
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -86,6 +82,30 @@ class QuizPageViewController: UIViewController {
     @IBAction func sendClick(_ sender: UIButton) {
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             DispatchQueue.main.async {  // UI updates on the main thread
+                
+                var q1SelectedOpt = 0
+                var feedbackMsg = ""
+                
+                if(self.q1opt1radio.isSelected){
+                    q1SelectedOpt = 1
+                }
+                if(self.q1opt2radio.isSelected){
+                    q1SelectedOpt = 2
+                }
+                if(self.q1opt3radio.isSelected){
+                    q1SelectedOpt = 3
+                }
+                if(self.q1opt4radio.isSelected){
+                    q1SelectedOpt = 4
+                }
+                
+                if(q1SelectedOpt == LanguageManager.shared.currentLanguage.q1CorrectAnswer){
+                    feedbackMsg = "acertou"
+                }else{
+                    feedbackMsg = "errou"
+                }
+                
+                
                 if(LanguageManager.shared.currentInjury != Injury.arrest){
                     self.goToNextBtn.isHidden = false
                 }
