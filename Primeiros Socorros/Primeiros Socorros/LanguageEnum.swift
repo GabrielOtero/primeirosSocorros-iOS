@@ -35,6 +35,28 @@ enum Language {
         }
     }
     
+    var correctAnswer: String{
+        switch self {
+        case .english:
+            return "Correct!"
+        case .portuguese:
+            return "Correto!"
+        case .spanish:
+            return "Correcto!"
+        }
+    }
+    
+    var incorrectAnswer: String{
+        switch self {
+        case .english:
+            return "wrong"
+        case .portuguese:
+            return "errado"
+        case .spanish:
+            return "incorrecto"
+        }
+    }
+    
     var nowAnswer: String{
         switch self {
         case .english:

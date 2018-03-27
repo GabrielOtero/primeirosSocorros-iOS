@@ -39,6 +39,9 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q1opt3radio: DLRadioButton!
     @IBOutlet weak var q1opt4radio: DLRadioButton!
     
+    @IBOutlet weak var q1Feedback: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -73,6 +76,8 @@ class QuizPageViewController: UIViewController {
         backToMenuBtn.isHidden = true
         goToNextBtn.isHidden = true
         
+        self.q1Feedback.isHidden = true
+        
         backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
         sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
         goToNextBtn.setTitle(LanguageManager.shared.currentLanguage.goToButton , for: .normal)
@@ -84,8 +89,7 @@ class QuizPageViewController: UIViewController {
             DispatchQueue.main.async {  // UI updates on the main thread
                 
                 var q1SelectedOpt = 0
-                var feedbackMsg = ""
-                
+            
                 if(self.q1opt1radio.isSelected){
                     q1SelectedOpt = 1
                 }
@@ -99,10 +103,14 @@ class QuizPageViewController: UIViewController {
                     q1SelectedOpt = 4
                 }
                 
+                self.q1Feedback.isHidden = false
+                self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / -10)
                 if(q1SelectedOpt == LanguageManager.shared.currentLanguage.q1CorrectAnswer){
-                    feedbackMsg = "acertou"
+                    self.q1Feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+                    self.q1Feedback.textColor =  UIColor.green
                 }else{
-                    feedbackMsg = "errou"
+                    self.q1Feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+                    self.q1Feedback.textColor =  UIColor.red
                 }
                 
                 
