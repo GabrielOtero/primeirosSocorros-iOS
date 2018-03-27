@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import M13Checkbox
 
 class QuizPageViewController: UIViewController {
     
@@ -33,10 +34,18 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q3opt3: UILabel!
     @IBOutlet weak var q3opt4: UILabel!
     
+//    @IBOutlet weak var q1opt1CheckBoxView: UIView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+//        let checkbox = M13Checkbox(frame: CGRect(x: 0.0, y: 0.0, width: 20.0, height: 20.0))
+//        checkbox.stateChangeAnimation = M13Checkbox.Animation.fill
+//
+//        q1opt1CheckBoxView.addSubview(checkbox)
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,6 +54,7 @@ class QuizPageViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         q1Label.text = LanguageManager.shared.currentLanguage.q1
         q2Label.text = LanguageManager.shared.currentLanguage.q2
         q3Label.text = LanguageManager.shared.currentLanguage.q3
@@ -79,7 +89,7 @@ class QuizPageViewController: UIViewController {
                 if(LanguageManager.shared.currentInjury != Injury.arrest){
                     self.goToNextBtn.isHidden = false
                 }
-                
+                self.sendQuizBtn.isHidden = true
                 self.backToMenuBtn.isHidden = false
                 let desiredOffset = CGPoint(x: 0, y: 0)
                 self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
