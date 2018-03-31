@@ -648,12 +648,16 @@
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.98039215690000003" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="a2T-q2-Qyd" secondAttribute="bottom" constant="20" id="8AE-vL-SIf"/>
                                             <constraint firstAttribute="trailing" secondItem="a2T-q2-Qyd" secondAttribute="trailing" constant="20" id="8OE-4h-guC"/>
                                             <constraint firstItem="a2T-q2-Qyd" firstAttribute="top" secondItem="v4n-Zl-N3K" secondAttribute="top" constant="20" id="Qs7-Lt-dOy"/>
                                             <constraint firstItem="a2T-q2-Qyd" firstAttribute="leading" secondItem="v4n-Zl-N3K" secondAttribute="leading" constant="20" id="bc6-DP-KxE"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9jQ-FN-22j" appends="YES" id="a7c-eo-xF2"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <constraints>
@@ -677,6 +681,7 @@
                     </view>
                     <size key="freeformSize" width="667" height="1000"/>
                     <connections>
+                        <outlet property="asd" destination="9jQ-FN-22j" id="Rme-kN-Gex"/>
                         <outlet property="backToMenuBtn" destination="i91-cG-zhW" id="Ej2-Zq-8DC"/>
                         <outlet property="goToNextBtn" destination="uxq-cJ-aGd" id="6e5-gu-Fuv"/>
                         <outlet property="q1Feedback" destination="FFM-Cv-bQZ" id="aSG-vr-alk"/>
@@ -714,6 +719,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbK-oO-aiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9jQ-FN-22j"/>
             </objects>
             <point key="canvasLocation" x="840.62968515742136" y="-2459.1999999999998"/>
         </scene>

@@ -54,6 +54,8 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q2feedback: UILabel!
     @IBOutlet weak var q3feedback: UILabel!
     
+    @IBOutlet var asd: UITapGestureRecognizer!
+    
     let greenColor = UIColor.green
     let redColor = UIColor.red
     
@@ -88,6 +90,54 @@ class QuizPageViewController: UIViewController {
         q3opt3.text = LanguageManager.shared.currentLanguage.q3opt3
         q3opt4.text = LanguageManager.shared.currentLanguage.q3opt4
         
+        var tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq1opt1))
+        q1opt1.isUserInteractionEnabled = true
+        q1opt1.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq1opt2))
+        q1opt2.isUserInteractionEnabled = true
+        q1opt2.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq1opt3))
+        q1opt3.isUserInteractionEnabled = true
+        q1opt3.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq1opt4))
+        q1opt4.isUserInteractionEnabled = true
+        q1opt4.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq2opt1))
+        q2opt1.isUserInteractionEnabled = true
+        q2opt1.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq2opt2))
+        q2opt2.isUserInteractionEnabled = true
+        q2opt2.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq2opt3))
+        q2opt3.isUserInteractionEnabled = true
+        q2opt3.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq2opt4))
+        q2opt4.isUserInteractionEnabled = true
+        q2opt4.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq3opt1))
+        q3opt1.isUserInteractionEnabled = true
+        q3opt1.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq3opt2))
+        q3opt2.isUserInteractionEnabled = true
+        q3opt2.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq3opt3))
+        q3opt3.isUserInteractionEnabled = true
+        q3opt3.addGestureRecognizer(tap)
+        
+        tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq3opt4))
+        q3opt4.isUserInteractionEnabled = true
+        q3opt4.addGestureRecognizer(tap)
+        
         backToMenuBtn.isHidden = true
         goToNextBtn.isHidden = true
         
@@ -99,6 +149,45 @@ class QuizPageViewController: UIViewController {
         sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
         goToNextBtn.setTitle(LanguageManager.shared.currentLanguage.goToButton , for: .normal)
         
+    }
+    
+    @objc func selectq1opt1(sender:UITapGestureRecognizer) {
+        self.q1opt1radio.isSelected = true
+    }
+    @objc func selectq1opt2(sender:UITapGestureRecognizer) {
+        self.q1opt2radio.isSelected = true
+    }
+    @objc func selectq1opt3(sender:UITapGestureRecognizer) {
+        self.q1opt3radio.isSelected = true
+    }
+    @objc func selectq1opt4(sender:UITapGestureRecognizer) {
+        self.q1opt4radio.isSelected = true
+    }
+    
+    @objc func selectq2opt1(sender:UITapGestureRecognizer) {
+        self.q2opt1radio.isSelected = true
+    }
+    @objc func selectq2opt2(sender:UITapGestureRecognizer) {
+        self.q2opt2radio.isSelected = true
+    }
+    @objc func selectq2opt3(sender:UITapGestureRecognizer) {
+        self.q2opt3radio.isSelected = true
+    }
+    @objc func selectq2opt4(sender:UITapGestureRecognizer) {
+        self.q2opt4radio.isSelected = true
+    }
+    
+    @objc func selectq3opt1(sender:UITapGestureRecognizer) {
+        self.q3opt1radio.isSelected = true
+    }
+    @objc func selectq3opt2(sender:UITapGestureRecognizer) {
+        self.q3opt2radio.isSelected = true
+    }
+    @objc func selectq3opt3(sender:UITapGestureRecognizer) {
+        self.q3opt3radio.isSelected = true
+    }
+    @objc func selectq3opt4(sender:UITapGestureRecognizer) {
+        self.q3opt4radio.isSelected = true
     }
     
     fileprivate func handleQ1() {
@@ -312,5 +401,8 @@ class QuizPageViewController: UIViewController {
             }
     })
     }
+    
+    
+    
 }
 
