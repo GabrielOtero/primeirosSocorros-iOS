@@ -54,7 +54,9 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q2feedback: UILabel!
     @IBOutlet weak var q3feedback: UILabel!
     
-    @IBOutlet var asd: UITapGestureRecognizer!
+    @IBOutlet var tapGesture: UITapGestureRecognizer!
+    
+    weak var timer: Timer?
     
     let greenColor = UIColor.green
     let redColor = UIColor.red
@@ -385,24 +387,35 @@ class QuizPageViewController: UIViewController {
     @IBAction func sendClick(_ sender: UIButton) {
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             DispatchQueue.main.async {
+                let desiredOffset = CGPoint(x: 0, y: 0)
+                self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
+            }
+        })
+        
+        timer = Timer.scheduledTimer(timeInterval: 0.24, target: self, selector: #selector(QuizPageViewController.handleQuestion), userInfo: nil, repeats: true)
+    }
+    
+    @objc func handleQuestion()
+    {
+        timer?.invalidate()
+        UIView.animate(withDuration: 0.25, animations: { () -> Void in
+            DispatchQueue.main.async {
+                let desiredOffset = CGPoint(x: 0, y: 1)
+                self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
+
                 self.handleQ1()
                 self.handleQ2()
                 self.handleQ3()
-                
+
                 if(LanguageManager.shared.currentInjury != Injury.arrest){
                     self.goToNextBtn.isHidden = false
                 }
                 self.sendQuizBtn.isHidden = true
                 self.backToMenuBtn.isHidden = false
-                let desiredOffset = CGPoint(x: 0, y: 1)
-                self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
-                
+
                 LanguageManager.shared.currentInjury = LanguageManager.shared.currentInjury.next
             }
-    })
+        })
     }
-    
-    
-    
 }
 

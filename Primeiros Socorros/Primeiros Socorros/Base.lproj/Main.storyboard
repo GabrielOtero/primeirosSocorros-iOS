@@ -681,7 +681,6 @@
                     </view>
                     <size key="freeformSize" width="667" height="1000"/>
                     <connections>
-                        <outlet property="asd" destination="9jQ-FN-22j" id="Rme-kN-Gex"/>
                         <outlet property="backToMenuBtn" destination="i91-cG-zhW" id="Ej2-Zq-8DC"/>
                         <outlet property="goToNextBtn" destination="uxq-cJ-aGd" id="6e5-gu-Fuv"/>
                         <outlet property="q1Feedback" destination="FFM-Cv-bQZ" id="aSG-vr-alk"/>
@@ -716,6 +715,7 @@
                         <outlet property="q3opt4radio" destination="W66-qE-oub" id="J67-bf-u00"/>
                         <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
                         <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>
+                        <outlet property="tapGesture" destination="9jQ-FN-22j" id="Rme-kN-Gex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbK-oO-aiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
