@@ -1282,6 +1282,33 @@ enum Language {
         }
     }
     
+    var q4CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            return 4
+        default:
+            return 0
+        }
+    }
+    
+    var q5CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            return 2
+        default:
+            return 0
+        }
+    }
+    
+    var q6CorrectAnswer: Int {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            return 1
+        default:
+            return 0
+        }
+    }
+    
     
     
 }

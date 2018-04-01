@@ -558,6 +558,216 @@ class QuizPageViewController: UIViewController {
         Analytics.logEvent(event, parameters: nil)
     }
     
+    fileprivate func handleQ4() {
+        // UI updates on the main thread
+        
+        self.q4opt1radio.isHidden = true
+        self.q4opt2radio.isHidden = true
+        self.q4opt3radio.isHidden = true
+        self.q4opt4radio.isHidden = true
+        
+        self.q4opt1.isHidden = true
+        self.q4opt2.isHidden = true
+        self.q4opt3.isHidden = true
+        self.q4opt4.isHidden = true
+        
+        var q4SelectedOpt = 0
+        
+        if(self.q4opt1radio.isSelected){
+            q4SelectedOpt = 1
+            self.q4opt1.isHidden = false
+            self.q4opt1.textColor = redColor
+        }
+        if(self.q4opt2radio.isSelected){
+            q4SelectedOpt = 2
+            self.q4opt2.isHidden = false
+            self.q4opt2.textColor = redColor
+        }
+        if(self.q4opt3radio.isSelected){
+            q4SelectedOpt = 3
+            self.q4opt3.isHidden = false
+            self.q4opt3.textColor = redColor
+        }
+        if(self.q4opt4radio.isSelected){
+            q4SelectedOpt = 4
+            self.q4opt4.isHidden = false
+            self.q4opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q4CorrectAnswer == 1){
+            self.q4opt1.isHidden = false
+            self.q4opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q4CorrectAnswer == 2){
+            self.q4opt2.isHidden = false
+            self.q4opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q4CorrectAnswer == 3){
+            self.q4opt3.isHidden = false
+            self.q4opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q4CorrectAnswer == 4){
+            self.q4opt4.isHidden = false
+            self.q4opt4.textColor = greenColor
+        }
+        
+        var feedbaackLabel = ""
+        self.q4feedback.isHidden = false
+        self.q4feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
+        if(q4SelectedOpt == LanguageManager.shared.currentLanguage.q4CorrectAnswer){
+            self.q4feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+            self.q4feedback.textColor = greenColor
+            feedbaackLabel = "right"
+        }else{
+            self.q4feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+            self.q4feedback.textColor = redColor
+            feedbaackLabel = "wrong"
+        }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q4_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
+    }
+    
+    fileprivate func handleQ5() {
+        // UI updates on the main thread
+        
+        self.q5opt1radio.isHidden = true
+        self.q5opt2radio.isHidden = true
+        self.q5opt3radio.isHidden = true
+        self.q5opt4radio.isHidden = true
+        
+        self.q5opt1.isHidden = true
+        self.q5opt2.isHidden = true
+        self.q5opt3.isHidden = true
+        self.q5opt4.isHidden = true
+        
+        var q5SelectedOpt = 0
+        
+        if(self.q5opt1radio.isSelected){
+            q5SelectedOpt = 1
+            self.q5opt1.isHidden = false
+            self.q5opt1.textColor = redColor
+        }
+        if(self.q5opt2radio.isSelected){
+            q5SelectedOpt = 2
+            self.q5opt2.isHidden = false
+            self.q5opt2.textColor = redColor
+        }
+        if(self.q5opt3radio.isSelected){
+            q5SelectedOpt = 3
+            self.q5opt3.isHidden = false
+            self.q5opt3.textColor = redColor
+        }
+        if(self.q5opt4radio.isSelected){
+            q5SelectedOpt = 4
+            self.q5opt4.isHidden = false
+            self.q5opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q5CorrectAnswer == 1){
+            self.q5opt1.isHidden = false
+            self.q5opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q5CorrectAnswer == 2){
+            self.q5opt2.isHidden = false
+            self.q5opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q5CorrectAnswer == 3){
+            self.q5opt3.isHidden = false
+            self.q5opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q5CorrectAnswer == 4){
+            self.q5opt4.isHidden = false
+            self.q5opt4.textColor = greenColor
+        }
+        
+        var feedbaackLabel = ""
+        self.q5feedback.isHidden = false
+        self.q5feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
+        if(q5SelectedOpt == LanguageManager.shared.currentLanguage.q5CorrectAnswer){
+            self.q5feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+            self.q5feedback.textColor = greenColor
+            feedbaackLabel = "right"
+        }else{
+            self.q5feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+            self.q5feedback.textColor = redColor
+            feedbaackLabel = "wrong"
+        }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q5_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
+    }
+    
+    fileprivate func handleQ6() {
+        // UI updates on the main thread
+        
+        self.q6opt1radio.isHidden = true
+        self.q6opt2radio.isHidden = true
+        self.q6opt3radio.isHidden = true
+        self.q6opt4radio.isHidden = true
+        
+        self.q6opt1.isHidden = true
+        self.q6opt2.isHidden = true
+        self.q6opt3.isHidden = true
+        self.q6opt4.isHidden = true
+        
+        var q6SelectedOpt = 0
+        
+        if(self.q6opt1radio.isSelected){
+            q6SelectedOpt = 1
+            self.q6opt1.isHidden = false
+            self.q6opt1.textColor = redColor
+        }
+        if(self.q6opt2radio.isSelected){
+            q6SelectedOpt = 2
+            self.q6opt2.isHidden = false
+            self.q6opt2.textColor = redColor
+        }
+        if(self.q6opt3radio.isSelected){
+            q6SelectedOpt = 3
+            self.q6opt3.isHidden = false
+            self.q6opt3.textColor = redColor
+        }
+        if(self.q6opt4radio.isSelected){
+            q6SelectedOpt = 4
+            self.q6opt4.isHidden = false
+            self.q6opt4.textColor = redColor
+        }
+        
+        if(LanguageManager.shared.currentLanguage.q6CorrectAnswer == 1){
+            self.q6opt1.isHidden = false
+            self.q6opt1.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q6CorrectAnswer == 2){
+            self.q6opt2.isHidden = false
+            self.q6opt2.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q6CorrectAnswer == 3){
+            self.q6opt3.isHidden = false
+            self.q6opt3.textColor = greenColor
+        }
+        if(LanguageManager.shared.currentLanguage.q6CorrectAnswer == 4){
+            self.q6opt4.isHidden = false
+            self.q6opt4.textColor = greenColor
+        }
+        
+        var feedbaackLabel = ""
+        self.q6feedback.isHidden = false
+        self.q6feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
+        if(q6SelectedOpt == LanguageManager.shared.currentLanguage.q6CorrectAnswer){
+            self.q6feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
+            self.q6feedback.textColor = greenColor
+            feedbaackLabel = "right"
+        }else{
+            self.q6feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
+            self.q6feedback.textColor = redColor
+            feedbaackLabel = "wrong"
+        }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q6_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
+    }
+    
     func q1Selected() -> Bool{
         return q1opt1radio.isSelected ||
         q1opt2radio.isSelected ||
@@ -579,8 +789,39 @@ class QuizPageViewController: UIViewController {
             q3opt4radio.isSelected
     }
     
+    func q4Selected() -> Bool{
+        return q4opt1radio.isSelected ||
+            q4opt2radio.isSelected ||
+            q4opt3radio.isSelected ||
+            q4opt4radio.isSelected
+    }
+    
+    func q5Selected() -> Bool{
+        return q5opt1radio.isSelected ||
+            q5opt2radio.isSelected ||
+            q5opt3radio.isSelected ||
+            q5opt4radio.isSelected
+    }
+    
+    func q6Selected() -> Bool{
+        return q6opt1radio.isSelected ||
+            q6opt2radio.isSelected ||
+            q6opt3radio.isSelected ||
+            q6opt4radio.isSelected
+    }
+    
     @IBAction func sendClick(_ sender: UIButton) {
         if(!q1Selected() || !q2Selected() || !q3Selected()){
+            UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                DispatchQueue.main.async {
+                    let desiredOffset = CGPoint(x: 0, y: 1)
+                    self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
+                }
+            })
+            return
+        }
+        
+        if(LanguageManager.shared.currentInjury == Injury.arrest && (!q4Selected() || !q5Selected() || !q6Selected())){
             UIView.animate(withDuration: 0.25, animations: { () -> Void in
                 DispatchQueue.main.async {
                     let desiredOffset = CGPoint(x: 0, y: 1)
@@ -611,6 +852,12 @@ class QuizPageViewController: UIViewController {
                 self.handleQ1()
                 self.handleQ2()
                 self.handleQ3()
+                
+                if(LanguageManager.shared.currentInjury == Injury.arrest){
+                    self.handleQ4()
+                    self.handleQ5()
+                    self.handleQ6()
+                }
 
                 if(LanguageManager.shared.currentInjury != Injury.arrest){
                     self.goToNextBtn.isHidden = false
