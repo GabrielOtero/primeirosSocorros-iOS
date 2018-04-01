@@ -1132,6 +1132,14 @@
                         <outlet property="q6Label" destination="Y5A-hF-fQG" id="g3s-Nv-Ldt"/>
                         <outlet property="q6StackView" destination="PPD-53-XOi" id="Jay-fF-ODO"/>
                         <outlet property="q6feedback" destination="JPr-up-Sij" id="D6k-8y-b6A"/>
+                        <outlet property="q6opt1" destination="cQw-MF-Ub8" id="mnj-2c-W98"/>
+                        <outlet property="q6opt1radio" destination="ZGZ-UE-F5W" id="Y5s-Fi-PiW"/>
+                        <outlet property="q6opt2" destination="fHY-wU-Hn5" id="QXX-g1-YVm"/>
+                        <outlet property="q6opt2radio" destination="kpR-53-FX5" id="wyd-lq-qFX"/>
+                        <outlet property="q6opt3" destination="d9L-fj-y9F" id="90t-BI-dan"/>
+                        <outlet property="q6opt3radio" destination="r2n-vC-GDE" id="K0h-vz-Pbo"/>
+                        <outlet property="q6opt4" destination="Nj7-Uc-MeG" id="bQb-1L-ZbI"/>
+                        <outlet property="q6opt4radio" destination="SUe-BW-hMY" id="zm5-qL-GZR"/>
                         <outlet property="scrollViewContent" destination="tUk-Ua-LrT" id="hBt-wm-f07"/>
                         <outlet property="sendQuizBtn" destination="pOF-Mw-ynd" id="Pgh-hn-BIs"/>
                         <outlet property="tapGesture" destination="9jQ-FN-22j" id="Rme-kN-Gex"/>
