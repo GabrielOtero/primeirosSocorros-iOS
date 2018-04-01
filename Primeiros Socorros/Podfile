@@ -8,6 +8,7 @@ target 'Primeiros Socorros' do
   # Pods for Primeiros Socorros
 
   pod 'DLRadioButton', '~> 1.4'
+  pod 'Firebase/Core'
 
   target 'Primeiros SocorrosTests' do
     inherit! :search_paths

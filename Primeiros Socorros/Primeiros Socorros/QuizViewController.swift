@@ -8,12 +8,17 @@
 
 import UIKit
 import DLRadioButton
+import FirebaseAnalytics
 
 class QuizPageViewController: UIViewController {
     
     @IBOutlet weak var q1Label: UILabel!
     @IBOutlet weak var q2Label: UILabel!
     @IBOutlet weak var q3Label: UILabel!
+    @IBOutlet weak var q4Label: UILabel!
+    @IBOutlet weak var q5Label: UILabel!
+    @IBOutlet weak var q6Label: UILabel!
+    
     @IBOutlet weak var goToNextBtn: UIButton!
     @IBOutlet weak var backToMenuBtn: UIButton!
     @IBOutlet weak var sendQuizBtn: UIButton!
@@ -34,6 +39,17 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q3opt3: UILabel!
     @IBOutlet weak var q3opt4: UILabel!
     
+    @IBOutlet weak var q4opt1: UILabel!
+    @IBOutlet weak var q4opt2: UILabel!
+    @IBOutlet weak var q4opt3: UILabel!
+    @IBOutlet weak var q4opt4: UILabel!
+    
+    @IBOutlet weak var q5opt1: UILabel!
+    @IBOutlet weak var q5opt2: UILabel!
+    @IBOutlet weak var q5opt3: UILabel!
+    @IBOutlet weak var q5opt4: UILabel!
+    
+    
     @IBOutlet weak var q1opt1radio: DLRadioButton!
     @IBOutlet weak var q1opt2radio: DLRadioButton!
     @IBOutlet weak var q1opt3radio: DLRadioButton!
@@ -50,11 +66,32 @@ class QuizPageViewController: UIViewController {
     @IBOutlet weak var q3opt3radio: DLRadioButton!
     @IBOutlet weak var q3opt4radio: DLRadioButton!
     
+    @IBOutlet weak var q4opt1radio: DLRadioButton!
+    @IBOutlet weak var q4opt2radio: DLRadioButton!
+    @IBOutlet weak var q4opt3radio: DLRadioButton!
+    @IBOutlet weak var q4opt4radio: DLRadioButton!
+    
+    @IBOutlet weak var q5opt1radio: DLRadioButton!
+    @IBOutlet weak var q5opt2radio: DLRadioButton!
+    @IBOutlet weak var q5opt3radio: DLRadioButton!
+    @IBOutlet weak var q5opt4radio: DLRadioButton!
+    
+    
     @IBOutlet weak var q1Feedback: UILabel!
     @IBOutlet weak var q2feedback: UILabel!
     @IBOutlet weak var q3feedback: UILabel!
+    @IBOutlet weak var q4feedback: UILabel!
+    @IBOutlet weak var q5feedback: UILabel!
+    @IBOutlet weak var q6feedback: UILabel!
+    
     
     @IBOutlet var tapGesture: UITapGestureRecognizer!
+    
+    @IBOutlet weak var q4StackView: UIStackView!
+    @IBOutlet weak var q5StackView: UIStackView!
+    @IBOutlet weak var q6StackView: UIStackView!
+    @IBOutlet weak var buttonStackView: UIStackView!
+    
     
     weak var timer: Timer?
     
@@ -63,12 +100,10 @@ class QuizPageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -76,6 +111,9 @@ class QuizPageViewController: UIViewController {
         q1Label.text = LanguageManager.shared.currentLanguage.q1
         q2Label.text = LanguageManager.shared.currentLanguage.q2
         q3Label.text = LanguageManager.shared.currentLanguage.q3
+        q4Label.text = LanguageManager.shared.currentLanguage.q4
+        q5Label.text = LanguageManager.shared.currentLanguage.q5
+        q6Label.text = LanguageManager.shared.currentLanguage.q6
         
         q1opt1.text = LanguageManager.shared.currentLanguage.q1opt1
         q1opt2.text = LanguageManager.shared.currentLanguage.q1opt2
@@ -91,6 +129,26 @@ class QuizPageViewController: UIViewController {
         q3opt2.text = LanguageManager.shared.currentLanguage.q3opt2
         q3opt3.text = LanguageManager.shared.currentLanguage.q3opt3
         q3opt4.text = LanguageManager.shared.currentLanguage.q3opt4
+        
+        q4opt1.text = LanguageManager.shared.currentLanguage.q4opt1
+        q4opt2.text = LanguageManager.shared.currentLanguage.q4opt2
+        q4opt3.text = LanguageManager.shared.currentLanguage.q4opt3
+        q4opt4.text = LanguageManager.shared.currentLanguage.q4opt4
+        
+        q5opt1.text = LanguageManager.shared.currentLanguage.q5opt1
+        q5opt2.text = LanguageManager.shared.currentLanguage.q5opt2
+        q5opt3.text = LanguageManager.shared.currentLanguage.q5opt3
+        q5opt4.text = LanguageManager.shared.currentLanguage.q5opt4
+        
+        backToMenuBtn.isHidden = true
+        goToNextBtn.isHidden = true
+        
+        self.q1Feedback.isHidden = true
+        self.q2feedback.isHidden = true
+        self.q3feedback.isHidden = true
+        self.q4feedback.isHidden = true
+        self.q5feedback.isHidden = true
+        self.q6feedback.isHidden = true
         
         var tap = UITapGestureRecognizer(target: self, action: #selector(QuizPageViewController.selectq1opt1))
         q1opt1.isUserInteractionEnabled = true
@@ -140,16 +198,15 @@ class QuizPageViewController: UIViewController {
         q3opt4.isUserInteractionEnabled = true
         q3opt4.addGestureRecognizer(tap)
         
-        backToMenuBtn.isHidden = true
-        goToNextBtn.isHidden = true
-        
-        self.q1Feedback.isHidden = true
-        self.q2feedback.isHidden = true
-        self.q3feedback.isHidden = true
-        
         backToMenuBtn.setTitle(LanguageManager.shared.currentLanguage.backToMenu, for: .normal)
         sendQuizBtn.setTitle(LanguageManager.shared.currentLanguage.send, for: .normal)
         goToNextBtn.setTitle(LanguageManager.shared.currentLanguage.goToButton , for: .normal)
+        
+        if(LanguageManager.shared.currentInjury != Injury.arrest){
+            q4StackView.isHidden = true
+            q5StackView.isHidden = true
+            q6StackView.isHidden = true
+        }
         
     }
     
@@ -245,15 +302,21 @@ class QuizPageViewController: UIViewController {
             self.q1opt4.textColor = greenColor
         }
         
+        var feedbaackLabel = ""
         self.q1Feedback.isHidden = false
         self.q1Feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q1SelectedOpt == LanguageManager.shared.currentLanguage.q1CorrectAnswer){
             self.q1Feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
             self.q1Feedback.textColor = greenColor
+            feedbaackLabel = "right"
         }else{
             self.q1Feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
             self.q1Feedback.textColor = redColor
+            feedbaackLabel = "wrong"
         }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q1_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
     }
     
     fileprivate func handleQ2() {
@@ -309,15 +372,21 @@ class QuizPageViewController: UIViewController {
             self.q2opt4.textColor = greenColor
         }
         
+        var feedbaackLabel = ""
         self.q2feedback.isHidden = false
         self.q2feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q2SelectedOpt == LanguageManager.shared.currentLanguage.q2CorrectAnswer){
             self.q2feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
             self.q2feedback.textColor = greenColor
+            feedbaackLabel = "right"
         }else{
             self.q2feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
             self.q2feedback.textColor = redColor
+            feedbaackLabel = "wrong"
         }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q2_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
     }
     
     fileprivate func handleQ3() {
@@ -373,18 +442,55 @@ class QuizPageViewController: UIViewController {
             self.q3opt4.textColor = greenColor
         }
         
+        var feedbaackLabel = ""
         self.q3feedback.isHidden = false
         self.q3feedback.transform = CGAffineTransform(rotationAngle: CGFloat.pi / 10)
         if(q3SelectedOpt == LanguageManager.shared.currentLanguage.q3CorrectAnswer){
             self.q3feedback.text = LanguageManager.shared.currentLanguage.correctAnswer
             self.q3feedback.textColor = greenColor
+            feedbaackLabel = "right"
         }else{
             self.q3feedback.text = LanguageManager.shared.currentLanguage.incorrectAnswer
             self.q3feedback.textColor = redColor
+            feedbaackLabel = "wrong"
         }
+        
+        let event = "\(LanguageManager.shared.currentInjury.name)" + "_q3_" + "\(feedbaackLabel)"
+        Analytics.logEvent(event, parameters: nil)
+    }
+    
+    func q1Selected() -> Bool{
+        return q1opt1radio.isSelected ||
+        q1opt2radio.isSelected ||
+        q1opt3radio.isSelected ||
+        q1opt4radio.isSelected
+    }
+    
+    func q2Selected() -> Bool{
+        return q2opt1radio.isSelected ||
+            q2opt2radio.isSelected ||
+            q2opt3radio.isSelected ||
+            q2opt4radio.isSelected
+    }
+    
+    func q3Selected() -> Bool{
+        return q3opt1radio.isSelected ||
+            q3opt2radio.isSelected ||
+            q3opt3radio.isSelected ||
+            q3opt4radio.isSelected
     }
     
     @IBAction func sendClick(_ sender: UIButton) {
+        if(!q1Selected() || !q2Selected() || !q3Selected()){
+            UIView.animate(withDuration: 0.25, animations: { () -> Void in
+                DispatchQueue.main.async {
+                    let desiredOffset = CGPoint(x: 0, y: 1)
+                    self.scrollViewContent.setContentOffset(desiredOffset, animated: true)
+                }
+            })
+            return
+        }
+        
         UIView.animate(withDuration: 0.25, animations: { () -> Void in
             DispatchQueue.main.async {
                 let desiredOffset = CGPoint(x: 0, y: 0)

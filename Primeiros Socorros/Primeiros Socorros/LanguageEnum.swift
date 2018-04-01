@@ -367,53 +367,53 @@ enum Language {
         }
     }
         
-        var q4 : String {
-            switch LanguageManager.shared.currentInjury {
-            case .arrest:
-                switch self{
-                case .english:
-                    return "How many compressions should be done in 1 minute?"
-                case .portuguese:
-                    return "Quantas compressões deve se fazer em 1 minuto?"
-                case .spanish:
-                    return "¿Cuántas compresiones se deben hacer en 1 minuto?"
-                }
-            default:
-                return "No Questions Yet"
+    var q4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "How many compressions should be done in 1 minute?"
+            case .portuguese:
+                return "Quantas compressões deve se fazer em 1 minuto?"
+            case .spanish:
+                return "¿Cuántas compresiones se deben hacer en 1 minuto?"
             }
+        default:
+            return "No Questions Yet"
         }
-        
-        var q5 : String {
-            switch LanguageManager.shared.currentInjury {
-            case .arrest:
-                switch self{
-                case .english:
-                    return "What is an AED? Who can use it?"
-                case .portuguese:
-                    return "O que é DEA? Quem pode usá-lo?"
-                case .spanish:
-                    return "¿Qué es DEA? ¿Quién puede usarlo?"
-                }
-            default:
-                return "No Questions Yet"
+    }
+
+    var q5 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "What is an AED? Who can use it?"
+            case .portuguese:
+                return "O que é DEA? Quem pode usá-lo?"
+            case .spanish:
+                return "¿Qué es DEA? ¿Quién puede usarlo?"
             }
+        default:
+            return "No Questions Yet"
         }
-        
-        var q6 : String {
-            switch LanguageManager.shared.currentInjury {
-            case .arrest:
-                switch self{
-                case .english:
-                    return "What does the AED do?"
-                case .portuguese:
-                    return "O que o DEA faz?"
-                case .spanish:
-                    return "¿Qué hace el DEA?"
-                }
-            default:
-                return "No Questions Yet"
+    }
+
+    var q6 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "What does the AED do?"
+            case .portuguese:
+                return "O que o DEA faz?"
+            case .spanish:
+                return "¿Qué hace el DEA?"
             }
+        default:
+            return "No Questions Yet"
         }
+    }
     
     var q1opt1 : String {
         switch LanguageManager.shared.currentInjury {
@@ -935,7 +935,6 @@ enum Language {
         }
     }
     
-    //TODO q3opt3
     var q3opt3: String {
         switch LanguageManager.shared.currentInjury {
         case .trauma:
@@ -1034,6 +1033,198 @@ enum Language {
                 return "Ficar do lado da pessoa até começarem as compressões."
             case .spanish:
                 return "Permanecer al lado de la persona hasta que comiencen las compresiones."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q4opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+            case .arrest:
+                switch self{
+                case .english:
+                    return "80-100 compressions."
+                case .portuguese:
+                    return "80-100 compressões."
+                case .spanish:
+                    return "80-100 compresiones."
+                }
+            default:
+                return "No Questions Yet"
+            }
+    }
+    
+    var q4opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "90-100 compressions."
+            case .portuguese:
+                return "90-100 compressões."
+            case .spanish:
+                return "90-100 compresiones."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q4opt3 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "90-110 compressions."
+            case .portuguese:
+                return "90-110 compressões."
+            case .spanish:
+                return "90-110 compresiones."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q4opt4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "100-120 compressions."
+            case .portuguese:
+                return "100-120 compressões."
+            case .spanish:
+                return "100-120 compresiones."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q5opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "Automated External Device. Only someone from the Emergency Medical Service."
+            case .portuguese:
+                return "Dispositivo Externo Automático. Somente o SAMU."
+            case .spanish:
+                return "Dispositivo Externo Automático. Solamente el SAMU."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q5opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "Automated External Defibrillator. Anyone oriented to use."
+            case .portuguese:
+                return "Desfibrilador Externo Automático. Qualquer pessoa orientada para uso."
+            case .spanish:
+                return "Desfibrilador Externo Automático. Cualquier persona orientada para usarlo."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q5opt3 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "Automated External Device. Anyone oriented to use."
+            case .portuguese:
+                return "Dispositivo Externo Automático. Qualquer pessoa orientada para uso."
+            case .spanish:
+                return "Dispositivo Externo Automático. Cualquier persona orientada para usarlo."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q5opt4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "Automated External Defibrillator. Only someone from the Emergency Medical Service."
+            case .portuguese:
+                return "Desfibrilador Externo Automático. Somente o SAMU."
+            case .spanish:
+                return "Desfibrilador Externo Automático. Solamente el SAMU."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q6opt1 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "It analyzes the person\'s heartbeats and, when it is appropriate, applies a shock for the heart to beat again."
+            case .portuguese:
+                return "Ele analisa o coração da pessoa e, quando apropriado, aplica um choque para o coração voltar a bater."
+            case .spanish:
+                return "Analiza el corazón de la persona y aplica un choque eléctrico para que el corazón vuelva a latir."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q6opt2 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "It analyzes the person's heart and makes compression to her chest."
+            case .portuguese:
+                return "Ele analisa o coração da pessoa e faz compressão no tórax dela."
+            case .spanish:
+                return "Analiza el corazón de la persona y hace compresiones en el tórax."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q6opt3 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "It applies a shock to the person's heart so that it beats again."
+            case .portuguese:
+                return "Ele aplica um choque no coração da pessoa para que ele volte a bater."
+            case .spanish:
+                return "Aplica un choque eléctrico en el corazón de la persona para que este vuelva a latir."
+            }
+        default:
+            return "No Questions Yet"
+        }
+    }
+    
+    var q6opt4 : String {
+        switch LanguageManager.shared.currentInjury {
+        case .arrest:
+            switch self{
+            case .english:
+                return "It analyzes the victim's heart."
+            case .portuguese:
+                return "Ele analisa o coração da pessoa."
+            case .spanish:
+                return "Analiza el corazón de la persona."
             }
         default:
             return "No Questions Yet"
